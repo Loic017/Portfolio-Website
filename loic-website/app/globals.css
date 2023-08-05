@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .menu-links {
+        @apply relative cursor-pointer w-[50px] h-[50px] flex items-center justify-center text-black rounded-xl transition-all hover:bg-secondary;
+    }
+}
+
+.sidebar-tooltip {
+    @apply absolute w-auto p-2 px-4 m-2 min-w-max left-16 rounded-md shadow-md text-text bg-accent/20 backdrop-blur-2xl text-lg font-carme font-semibold transition-all duration-100 origin-left scale-0;
+}
+
+.socials {
+    @apply text-text rounded-lg p-2 w-10 h-10 transition-all hover:bg-text/70 hover:rounded-md hover:text-background;
+}

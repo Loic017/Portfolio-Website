@@ -1,11 +1,11 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+
+import HomeHero from "../components/Home";
 
 export default function Home() {
     return (
         <main>
-            <p>Good Evening</p>
-            <p>Website coming soon</p>
+            <HomeHero />
         </main>
     );
 }
