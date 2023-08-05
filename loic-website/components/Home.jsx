@@ -6,10 +6,10 @@ import { SiCodepen } from "react-icons/si";
 export default function HomeHero() {
     return (
         <section>
-            <div className="mt-28 w-full flex flex-col mx-auto text-center">
-                <div className="h-[500px] w-96 rounded-t-full bg-gradient-to-b from-primary to-transparent mx-auto"></div>
+            <div className="mt-28 max-[840px]:mt-14 w-full flex flex-col mx-auto text-center">
+                <div className="h-[500px] w-96 rounded-t-full bg-gradient-to-b from-primary to-transparent mx-auto text-center"></div>
                 <div className="mt-14">
-                    <h1 className="text-text text-5xl font-extrabold">
+                    <h1 className="text-text text-5xl font-extrabold  max-[640px]:text-center max-[640px]:mx-auto">
                         Loic Lorente Lemoine
                     </h1>
                     <h2 className="type-roles text-text text-2xl my-3"></h2>
