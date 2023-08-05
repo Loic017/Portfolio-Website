@@ -3,6 +3,7 @@ import Image from "next/image";
 import { BiHomeAlt2 } from "react-icons/bi";
 import { IoShareSocialOutline, IoPersonOutline } from "react-icons/io5";
 import { BsBriefcase } from "react-icons/bs";
+import { MdDarkMode } from "react-icons/md";
 import Link from "next/link";
 
 // import * as Scroll from 'react-scroll';
@@ -36,6 +37,10 @@ export default function Navbar() {
                         Blog & Socials
                     </span>
                 </Link>
+                <hr />
+                <button className="menu-links group">
+                    <MdDarkMode />
+                </button>
             </div>
         </nav>
     );

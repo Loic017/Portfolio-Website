@@ -4,7 +4,7 @@ import { SiCodepen } from "react-icons/si";
 export default function AboutInfo() {
     return (
         <section>
-            <h1>Hello</h1>
+            <h1></h1>
         </section>
     );
 }

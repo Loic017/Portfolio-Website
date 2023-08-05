@@ -4,7 +4,7 @@
 
 @layer components {
     .menu-links {
-        @apply shadow-lg relative cursor-pointer w-[50px] h-[50px] flex items-center justify-center text-black rounded-full transition-all hover:bg-secondary hover:rounded-xl;
+        @apply shadow-lg relative cursor-pointer w-[50px] h-[50px] flex items-center justify-center text-black rounded-full hover:bg-secondary hover:rounded-xl;
     }
 }
 
@@ -14,4 +14,12 @@
 
 .socials {
     @apply text-text rounded-lg p-2 w-10 h-10 transition-all hover:bg-text/70 hover:rounded-md hover:text-background;
+}
+
+.skills {
+    @apply bg-accent/20 shadow-md rounded-md p-2 w-28 h-28 transition-all hover:bg-accent/70 hover:rounded-md hover:text-background;
+}
+
+.skills-rows {
+    @apply flex gap-4;
 }
