@@ -4,7 +4,7 @@
 
 @layer components {
     .menu-links {
-        @apply relative cursor-pointer w-[50px] h-[50px] flex items-center justify-center text-black rounded-xl transition-all hover:bg-secondary;
+        @apply shadow-lg relative cursor-pointer w-[50px] h-[50px] flex items-center justify-center text-black rounded-full transition-all hover:bg-secondary hover:rounded-xl;
     }
 }
 

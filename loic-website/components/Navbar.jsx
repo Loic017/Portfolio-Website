@@ -18,7 +18,7 @@ export default function Navbar() {
                         Home
                     </span>
                 </Link>
-                <Link href="#" className="menu-links group">
+                <Link href="/about" className="menu-links group">
                     <IoPersonOutline />
                     <span className="sidebar-tooltip group-hover:scale-100">
                         About
