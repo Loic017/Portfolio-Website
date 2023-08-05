@@ -20,7 +20,7 @@ export default function Navbar() {
         setIsBurger(!isBurger);
     }
 
-    let burgerClass = isBurger ? "scale-100" : "scale-0";
+    let burgerClass = isBurger ? "block" : "hidden";
 
     return (
         <nav className="max-[840px]:right-0 fixed bottom-2 lg:bottom-8 w-28 z-50">
