@@ -3,14 +3,14 @@ import { SiCodepen } from "react-icons/si";
 
 export default function AboutInfo() {
     return (
-        <section className="md:mt-10 w-full justify-center items-center mx-auto gap-6 p-5 bg-accent text-secondary rounded-md">
+        <section className="md:mt-10 w-full justify-center items-center mx-auto gap-6 p-5 bg-accent text-secondary rounded-md text-center">
             <div className="">
                 <p className="md:w-96 mx-auto text-center">
-                    A 3rd year undergraduate at Cardiff University with a
-                    passion for Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Cupiditate sint quasi sed rem dolore
-                    soluta, nulla culpa repellendus placeat quia ex corrupti.
-                    Molestias, saepe quae quis minus a numquam iste.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Velit distinctio fugiat voluptate voluptatum rem reiciendis,
+                    neque pariatur similique, laboriosam necessitatibus quaerat
+                    incidunt eius officia sed? Cupiditate soluta necessitatibus
+                    dolorem asperiores.
                 </p>
             </div>
         </section>

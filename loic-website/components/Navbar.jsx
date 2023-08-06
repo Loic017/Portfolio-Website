@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
 
 import { BiHomeAlt2 } from "react-icons/bi";
 import { IoShareSocialOutline, IoPersonOutline } from "react-icons/io5";
@@ -21,6 +22,23 @@ export default function Navbar() {
     }
 
     let burgerClass = isBurger ? "block" : "hidden";
+
+    const { theme, setTheme } = useTheme();
+
+    function toggleTheme() {
+        setTheme(theme === "light" ? "dark" : "light");
+        console.log(theme);
+    }
+
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
+    if (!isMounted) {
+        return null;
+    }
 
     return (
         <nav className="max-[840px]:right-0 fixed bottom-2 lg:bottom-8 w-28 z-50">
@@ -45,14 +63,14 @@ export default function Navbar() {
                         Projects & Experience
                     </span>
                 </Link>
-                <Link href="#" className="menu-links group">
+                <Link href="/socials" className="menu-links group">
                     <IoShareSocialOutline />
                     <span className="max-[840px]:hidden sidebar-tooltip group-hover:scale-100">
-                        Blog & Socials
+                        Contact
                     </span>
                 </Link>
                 <hr />
-                <button className="menu-links group">
+                <button onClick={toggleTheme} className="menu-links group">
                     <MdDarkMode />
                 </button>
             </div>

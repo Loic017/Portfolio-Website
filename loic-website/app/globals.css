@@ -21,9 +21,13 @@
 }
 
 .skills-rows {
-    @apply grid grid-cols-4 gap-2 md:py-2 gap-y-3 md:w-[500px] md:flex md:justify-center;
+    @apply grid grid-cols-1 gap-2 md:py-2 gap-y-3 md:w-[500px] md:flex md:justify-center;
 }
 
 .skills-headings {
-    @apply px-10 py-2 font-semibold;
+    @apply md:px-10 md:py-2 font-semibold;
+}
+
+[data-theme="dark"] body {
+    @apply bg-accent text-primary;
 }
