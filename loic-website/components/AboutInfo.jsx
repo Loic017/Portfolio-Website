@@ -1,6 +1,3 @@
-import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { SiCodepen } from "react-icons/si";
-
 export default function AboutInfo() {
     return (
         <section className="overflow-hidden md:mt-10 md:text-left text-center md:w-[800px] w-390px shadow-xl w-full mx-auto text-text bg-secondary/50 rounded-2xl flex md:flex-row flex-col md:gap-2">
