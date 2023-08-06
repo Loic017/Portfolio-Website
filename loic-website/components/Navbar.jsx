@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
@@ -12,8 +13,7 @@ import {
     AiOutlineInfoCircle,
 } from "react-icons/ai";
 
-import { Link } from "react-scroll";
-import { animateScroll as scroll } from "react-scroll";
+import { Link, animateScroll } from "react-scroll";
 
 // import * as Scroll from 'react-scroll';
 // import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
@@ -45,7 +45,7 @@ export default function Navbar() {
     }
 
     const scrollToTop = () => {
-        scroll.scrollToTop();
+        animateScroll.scrollToTop();
     };
 
     return (

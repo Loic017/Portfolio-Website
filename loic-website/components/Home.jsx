@@ -1,4 +1,4 @@
-import Image from "next/image";
+import React from "react";
 
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { SiCodepen } from "react-icons/si";

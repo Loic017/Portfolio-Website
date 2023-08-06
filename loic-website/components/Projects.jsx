@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Projects() {
     return (
         <section className="grid gap-5 mt-5">
@@ -60,10 +62,10 @@ function ProjectComponent(props) {
     const { title, description, tools, links, image } = props;
 
     return (
-        <div class="max-w-md mx-auto w-96 rounded-xl shadow-lg md:text-text md:bg-secondary/50 overflow-hidden md:max-w-2xl">
-            <div class="">
-                <div class="relative">
-                    <img class="h-32 w-full object-cover" src={image} />
+        <div className="max-w-md mx-auto w-96 rounded-xl shadow-lg md:text-text md:bg-secondary/50 overflow-hidden md:max-w-2xl">
+            <div className="">
+                <div className="relative">
+                    <img className="h-32 w-full object-cover" src={image} />
                     <div className="absolute bottom-2 right-2 z-10 flex gap-3 justify-end mt-3">
                         {Object.entries(links).map(([name, url]) => (
                             <a key={name} href={url} className="project-links">
@@ -72,8 +74,8 @@ function ProjectComponent(props) {
                         ))}
                     </div>
                 </div>
-                <div class="p-8">
-                    <div class="uppercase tracking-wide text-sm font-semibold">
+                <div className="p-8">
+                    <div className="uppercase tracking-wide text-sm font-semibold">
                         // {title}
                     </div>
                     <div className="flex gap-1">
@@ -84,7 +86,7 @@ function ProjectComponent(props) {
                         ]
                     </div>
 
-                    <p class="mt-1">{description}</p>
+                    <p className="mt-1">{description}</p>
                 </div>
             </div>
         </div>

@@ -1,3 +1,4 @@
+import React from "react";
 import {
     DiDjango,
     DiPython,
@@ -28,7 +29,7 @@ export default function Skills() {
             <div className="flex flex-row justify-center mt-2 gap-2 md:flex-col">
                 <div>
                     <h2 className="skills-headings">Languages</h2>
-                    <div class="hidden md:bg-accent/20 md:rounded-full md:h-1"></div>
+                    <div className="hidden md:bg-accent/20 md:rounded-full md:h-1"></div>
                     <div className="skills-rows">
                         <DiPython className="skills text-8xl text-blue-700" />
                         <DiJava className="skills text-8xl text-yellow-700" />
@@ -39,7 +40,7 @@ export default function Skills() {
                 </div>
                 <div>
                     <h2 className="skills-headings">Frameworks</h2>
-                    <div class="hidden md:bg-accent/20 md:rounded-full md:h-1"></div>
+                    <div className="hidden md:bg-accent/20 md:rounded-full md:h-1"></div>
                     <div className="skills-rows">
                         <DiDjango className="skills text-8xl text-green-700" />
                         <BiLogoFlask className="skills text-8xl text-black-700" />
@@ -51,7 +52,7 @@ export default function Skills() {
                 </div>
                 <div>
                     <h2 className="skills-headings">Other</h2>
-                    <div class="hidden md:bg-accent/20 md:rounded-full md:h-1"></div>
+                    <div className="hidden md:bg-accent/20 md:rounded-full md:h-1"></div>
                     <div className="skills-rows">
                         <BiLogoPostgresql className="skills text-8xl text-blue-500" />
                     </div>

@@ -1,3 +1,5 @@
+import React from "react";
+
 import HomeHero from "../components/Home";
 import Projects from "../components/Projects";
 import AboutInfo from "../components/AboutInfo";
