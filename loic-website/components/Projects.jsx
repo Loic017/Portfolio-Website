@@ -7,8 +7,6 @@ export default function Projects() {
                 My Projects
             </h1>
             <div className="grid md:grid-cols-3 md:gap-3 gap-5 mx-auto">
-                {/* Title: String, Description: String, Tools: Array, Links: Dictionary, Image: String */}
-
                 <ProjectComponent
                     title="Toolgether"
                     description="Lorem"
@@ -68,7 +66,7 @@ function ProjectComponent(props) {
                     <img className="h-32 w-full object-cover" src={image} />
                     <div className="absolute bottom-2 right-2 z-10 flex gap-3 justify-end mt-3">
                         {Object.entries(links).map(([name, url]) => (
-                            <a key={name} href={url} className="project-links">
+                            <a href={url} className="project-links">
                                 {name}
                             </a>
                         ))}

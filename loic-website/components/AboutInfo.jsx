@@ -15,7 +15,7 @@ export default function AboutInfo() {
                 </h1>
                 <p className="pl-4 pr-4 md:w-96 mx-auto mb-4">
                     I am a Computer Science undergraduate in my third year at
-                    Cardiff University. My enthusiasm for{" "}
+                    Cardiff University. My enthusiasm for
                     <bold className="font-bold">problem-solving</bold> and my
                     affinity for <bold className="font-bold">creating</bold> has
                     brought me on a path of learning and programming.
