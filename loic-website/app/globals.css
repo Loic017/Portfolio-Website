@@ -12,6 +12,10 @@
     @apply absolute w-auto p-2 px-4 m-2 min-w-max max-[840px]:scale-100 max-[840px]:right-16 max-[840px]:bg-accent max-[840px]:backdrop-blur-0 min-[841px]:left-16 rounded-md shadow-md text-text bg-accent/20 backdrop-blur-2xl text-lg font-semibold transition-all duration-100 origin-left scale-0;
 }
 
+.tech-tooltip {
+    @apply z-20 absolute w-[112px] text-center pl-2 mt-1 pr-2 min-w-max max-[840px]:backdrop-blur-0 rounded-md shadow-md text-secondary bg-text/70 backdrop-blur-2xl text-lg font-semibold transition-all duration-100 origin-top scale-0;
+}
+
 .socials {
     @apply text-text rounded-lg p-2 w-10 h-10 transition-all hover:bg-text/70 hover:rounded-md hover:text-background;
 }
@@ -37,11 +41,19 @@
 }
 
 [data-theme="dark"] .skills {
-    @apply bg-text/50 hover:bg-secondary/70 hover:text-text;
+    @apply bg-secondary/80 hover:bg-text/70 hover:text-secondary;
 }
 
 .home-header {
     @apply mx-auto;
+}
+
+[data-theme="dark"] .skills-text {
+    @apply text-secondary;
+}
+
+[data-theme="dark"] .info-back {
+    @apply bg-secondary/10;
 }
 
 [data-theme="dark"] .home-header {
@@ -49,11 +61,11 @@
 }
 
 .skills-rows {
-    @apply grid grid-cols-1 gap-2 md:py-2 gap-y-3 md:w-[500px] md:flex md:justify-center;
+    @apply grid grid-cols-1 gap-2 md:py-2 gap-y-3 md:w-[800px] md:flex md:items-center md:justify-center;
 }
 
 .skills-headings {
-    @apply md:px-10 md:py-2 font-semibold;
+    @apply text-center font-semibold opacity-30;
 }
 
 [data-theme="dark"] body {

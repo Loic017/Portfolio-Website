@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutInfo() {
     return (
-        <section className="overflow-hidden md:mt-10 md:text-left text-center md:w-[800px] w-390px shadow-xl w-full mx-auto text-text bg-secondary/50 rounded-2xl flex md:flex-row flex-col md:gap-2">
+        <section className="skills-text info-back overflow-hidden md:mt-10 md:text-left text-center md:w-[800px] w-390px shadow-xl w-full mx-auto text-text bg-secondary/50 rounded-2xl flex md:flex-row flex-col md:gap-2">
             <img
                 className="md:h-auto md:w-[300px] object-cover h-[100px] w-full"
                 src="https://images.unsplash.com/photo-1658409524023-5c835864baf2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1450&q=80"
@@ -16,7 +16,7 @@ export default function AboutInfo() {
                 <p className="pl-4 pr-4 md:w-96 mx-auto mb-4">
                     I am a Computer Science undergraduate in my third year at
                     Cardiff University. My enthusiasm for
-                    <bold className="font-bold">problem-solving</bold> and my
+                    <bold className="font-bold"> problem-solving</bold> and my
                     affinity for <bold className="font-bold">creating</bold> has
                     brought me on a path of learning and programming.
                 </p>

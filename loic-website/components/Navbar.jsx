@@ -61,13 +61,13 @@ export default function Navbar() {
                         About
                     </span>
                 </Link>
-                <Link href="/projs" className="menu-links group">
+                <Link href="/proj" className="menu-links group">
                     <BsBriefcase />
                     <span className="sidebar-tooltip group-hover:scale-100">
                         Projects
                     </span>
                 </Link>
-                <Link href="/projs" className="menu-links group">
+                <Link href="/proj" className="menu-links group">
                     <BsProjector />
                     <span className="sidebar-tooltip group-hover:scale-100">
                         Experiences
