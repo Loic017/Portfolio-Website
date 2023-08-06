@@ -40,6 +40,10 @@
     @apply bg-text/50 hover:bg-secondary/70 hover:text-text;
 }
 
+.home-header {
+    @apply mx-auto;
+}
+
 [data-theme="dark"] .home-header {
     @apply text-secondary;
 }

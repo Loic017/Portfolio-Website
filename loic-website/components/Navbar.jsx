@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
@@ -13,7 +13,7 @@ import {
     AiOutlineInfoCircle,
 } from "react-icons/ai";
 
-import { Link, animateScroll } from "react-scroll";
+import Link from "next/link";
 
 // import * as Scroll from 'react-scroll';
 // import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
@@ -44,71 +44,36 @@ export default function Navbar() {
         return null;
     }
 
-    const scrollToTop = () => {
-        animateScroll.scrollToTop();
-    };
-
     return (
         <nav className="max-[840px]:right-0 fixed bottom-2 lg:bottom-8 w-28 z-50">
             <div
                 className={`nav-bar-dark max-[840px]:${burgerClass} h-[450px] w-16 bg-accent/20 backdrop-blur-2xl rounded-xl max-w-[460px] mx-auto px-5 flex flex-col justify-around text-2xl text-white/50 items-center`}
             >
-                <Link
-                    activeClass="active"
-                    smooth
-                    spy
-                    to=""
-                    className="menu-links group"
-                    onClick={scrollToTop}
-                >
+                <Link href="/" className="menu-links group">
                     <AiOutlineRightSquare />
                     <span className="sidebar-tooltip group-hover:scale-100">
                         Home
                     </span>
                 </Link>
-                <Link
-                    activeClass="active"
-                    smooth
-                    spy
-                    to="about"
-                    className="menu-links group"
-                >
+                <Link href="/about" className="menu-links group">
                     <AiOutlineInfoCircle />
                     <span className="sidebar-tooltip group-hover:scale-100">
                         About
                     </span>
                 </Link>
-                <Link
-                    activeClass="active"
-                    smooth
-                    spy
-                    to="projects"
-                    className="menu-links group"
-                >
+                <Link href="/projs" className="menu-links group">
                     <BsBriefcase />
                     <span className="sidebar-tooltip group-hover:scale-100">
                         Projects
                     </span>
                 </Link>
-                <Link
-                    activeClass="active"
-                    smooth
-                    spy
-                    to="projects"
-                    className="menu-links group"
-                >
+                <Link href="/projs" className="menu-links group">
                     <BsProjector />
                     <span className="sidebar-tooltip group-hover:scale-100">
                         Experiences
                     </span>
                 </Link>
-                <Link
-                    activeClass="active"
-                    smooth
-                    spy
-                    to="projects"
-                    className="menu-links group"
-                >
+                <Link href="/socials" className="menu-links group">
                     <IoShareSocialOutline />
                     <span className="sidebar-tooltip group-hover:scale-100">
                         Contact
