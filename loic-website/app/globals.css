@@ -9,15 +9,39 @@
 }
 
 .sidebar-tooltip {
-    @apply absolute w-auto p-2 px-4 m-2 min-w-max left-16 rounded-md shadow-md text-text bg-accent/20 backdrop-blur-2xl text-lg font-carme font-semibold transition-all duration-100 origin-left scale-0;
+    @apply absolute w-auto p-2 px-4 m-2 min-w-max max-[840px]:scale-100 max-[840px]:right-16 max-[840px]:bg-accent max-[840px]:backdrop-blur-0 min-[841px]:left-16 rounded-md shadow-md text-text bg-accent/20 backdrop-blur-2xl text-lg font-carme font-semibold transition-all duration-100 origin-left scale-0;
 }
 
 .socials {
     @apply text-text rounded-lg p-2 w-10 h-10 transition-all hover:bg-text/70 hover:rounded-md hover:text-background;
 }
 
+[data-theme="dark"] .socials {
+    @apply text-secondary hover:bg-primary/70 hover:text-accent;
+}
+
+[data-theme="dark"] .nav-bar-dark {
+    @apply bg-secondary/50 text-text;
+}
+
+[data-theme="dark"] .menu-links {
+    @apply text-text;
+}
+
+[data-theme="dark"] .sidebar-tooltip {
+    @apply bg-secondary/50 text-text;
+}
+
 .skills {
     @apply bg-accent/20 shadow-md rounded-md p-2 w-28 h-28 transition-all hover:bg-accent/70 hover:rounded-md hover:text-background;
+}
+
+[data-theme="dark"] .skills {
+    @apply bg-text/50 hover:bg-secondary/70 hover:text-text;
+}
+
+[data-theme="dark"] .home-header {
+    @apply text-secondary;
 }
 
 .skills-rows {
@@ -29,5 +53,17 @@
 }
 
 [data-theme="dark"] body {
-    @apply bg-accent text-primary;
+    @apply bg-accent text-secondary;
+}
+
+/* .project-item {
+    @apply shadow-lg w-[450px] h-60 mx-auto p-4 flex gap-5 rounded-lg bg-accent/75 text-secondary;
+}
+
+.item-img {
+    @apply w-40 h-52 bg-cover object-cover rounded-lg;
+} */
+
+.project-links {
+    @apply bg-accent/60 shadow-md rounded-md px-3 py-1 text-xs transition-all text-secondary hover:bg-text/90 hover:rounded-md hover:text-background;
 }

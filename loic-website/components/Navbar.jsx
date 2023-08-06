@@ -3,13 +3,17 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
-import { BiHomeAlt2 } from "react-icons/bi";
 import { IoShareSocialOutline, IoPersonOutline } from "react-icons/io5";
-import { BsBriefcase } from "react-icons/bs";
+import { BsBriefcase, BsProjector } from "react-icons/bs";
 import { MdDarkMode } from "react-icons/md";
 import { PiHamburgerFill } from "react-icons/pi";
-import { AiFillCloseCircle } from "react-icons/ai";
-import Link from "next/link";
+import {
+    AiFillCloseCircle,
+    AiOutlineRightSquare,
+    AiOutlineInfoCircle,
+} from "react-icons/ai";
+
+import { Link } from "react-scroll";
 
 // import * as Scroll from 'react-scroll';
 // import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
@@ -43,29 +47,35 @@ export default function Navbar() {
     return (
         <nav className="max-[840px]:right-0 fixed bottom-2 lg:bottom-8 w-28 z-50">
             <div
-                className={`max-[840px]:${burgerClass} h-96 w-16 bg-accent/20 backdrop-blur-2xl rounded-xl max-w-[460px] mx-auto px-5 flex flex-col justify-around text-2xl text-white/50 items-center`}
+                className={`nav-bar-dark max-[840px]:${burgerClass} h-[450px] w-16 bg-accent/20 backdrop-blur-2xl rounded-xl max-w-[460px] mx-auto px-5 flex flex-col justify-around text-2xl text-white/50 items-center`}
             >
                 <Link href="/home" className="menu-links group">
-                    <BiHomeAlt2 />
-                    <span className="max-[840px]:hidden sidebar-tooltip group-hover:scale-100">
+                    <AiOutlineRightSquare />
+                    <span className="sidebar-tooltip group-hover:scale-100">
                         Home
                     </span>
                 </Link>
                 <Link href="/about" className="menu-links group">
-                    <IoPersonOutline />
-                    <span className="max-[840px]:hidden sidebar-tooltip group-hover:scale-100">
+                    <AiOutlineInfoCircle />
+                    <span className="sidebar-tooltip group-hover:scale-100">
                         About
                     </span>
                 </Link>
                 <Link href="/projs" className="menu-links group">
                     <BsBriefcase />
-                    <span className="max-[840px]:hidden sidebar-tooltip group-hover:scale-100">
-                        Projects & Experience
+                    <span className="sidebar-tooltip group-hover:scale-100">
+                        Projects
+                    </span>
+                </Link>
+                <Link href="/projs" className="menu-links group">
+                    <BsProjector />
+                    <span className="sidebar-tooltip group-hover:scale-100">
+                        Experiences
                     </span>
                 </Link>
                 <Link href="/socials" className="menu-links group">
                     <IoShareSocialOutline />
-                    <span className="max-[840px]:hidden sidebar-tooltip group-hover:scale-100">
+                    <span className="sidebar-tooltip group-hover:scale-100">
                         Contact
                     </span>
                 </Link>
