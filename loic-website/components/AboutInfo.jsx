@@ -3,10 +3,9 @@ import { SiCodepen } from "react-icons/si";
 
 export default function AboutInfo() {
     return (
-        <section className="w-full justify-center items-center mx-auto gap-6 bg-gradient-to-b from-primary/30 to-transparent p-5 rounded-lg">
+        <section className="md:mt-10 w-full justify-center items-center mx-auto gap-6 p-5 bg-accent text-secondary rounded-md">
             <div className="">
-                <div className=""></div>
-                <p className="mt-5">
+                <p className="md:w-96 mx-auto text-center">
                     A 3rd year undergraduate at Cardiff University with a
                     passion for Lorem ipsum dolor sit amet, consectetur
                     adipisicing elit. Cupiditate sint quasi sed rem dolore

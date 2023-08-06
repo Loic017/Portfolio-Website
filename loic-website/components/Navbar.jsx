@@ -39,7 +39,7 @@ export default function Navbar() {
                         About
                     </span>
                 </Link>
-                <Link href="#" className="menu-links group">
+                <Link href="/projs" className="menu-links group">
                     <BsBriefcase />
                     <span className="max-[840px]:hidden sidebar-tooltip group-hover:scale-100">
                         Projects & Experience

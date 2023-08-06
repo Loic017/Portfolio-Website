@@ -21,5 +21,9 @@
 }
 
 .skills-rows {
-    @apply grid grid-cols-4 gap-y-3;
+    @apply grid grid-cols-4 gap-2 md:py-2 gap-y-3 md:w-[500px] md:flex md:justify-center;
+}
+
+.skills-headings {
+    @apply px-10 py-2 font-semibold;
 }
