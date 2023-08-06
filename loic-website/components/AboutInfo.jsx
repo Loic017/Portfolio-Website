@@ -3,14 +3,32 @@ import { SiCodepen } from "react-icons/si";
 
 export default function AboutInfo() {
     return (
-        <section className="md:mt-10 w-full justify-center items-center mx-auto gap-6 p-5 bg-accent text-secondary rounded-md text-center">
+        <section className="overflow-hidden md:mt-10 md:text-left text-center md:w-[800px] w-390px shadow-xl w-full mx-auto text-text bg-secondary/50 rounded-2xl flex md:flex-row flex-col md:gap-2">
+            <img
+                className="md:h-auto md:w-[300px] object-cover h-[100px] w-full"
+                src="https://images.unsplash.com/photo-1658409524023-5c835864baf2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1450&q=80"
+                alt=""
+            />
+
             <div className="">
-                <p className="md:w-96 mx-auto text-center">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Velit distinctio fugiat voluptate voluptatum rem reiciendis,
-                    neque pariatur similique, laboriosam necessitatibus quaerat
-                    incidunt eius officia sed? Cupiditate soluta necessitatibus
-                    dolorem asperiores.
+                <h1 className="mt-2 mb-2 font-bold text-2xl w-[70%] mx-auto">
+                    Hello there! Im Loic,
+                </h1>
+                <p className="pl-4 pr-4 md:w-96 mx-auto mb-4">
+                    I am a Computer Science undergraduate in my third year at
+                    Cardiff University. My enthusiasm for{" "}
+                    <bold className="font-bold">problem-solving</bold> and my
+                    affinity for <bold className="font-bold">creating</bold> has
+                    brought me on a path of learning and programming.
+                </p>
+                <p className="pl-4 pr-4 md:w-96 mx-auto mb-4">
+                    Over the past few years I have delved down many programming
+                    rabit holes, improving my knowledge and skills along the
+                    way.
+                </p>
+                <p className="pl-4 pr-4 md:w-96 mx-auto mb-4">
+                    When I am not typing away, I sometimes become a manager on
+                    Football Manager or I am enjoying some time with my dog.
                 </p>
             </div>
         </section>

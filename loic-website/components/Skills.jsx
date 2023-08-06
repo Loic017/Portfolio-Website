@@ -20,8 +20,9 @@ import { TbBrandNextjs } from "react-icons/tb";
 
 export default function Skills() {
     return (
-        <section className="px-5 md:w-auto mx-auto mt-5 mb-10 p-57 md:flex md:flex-col md:justify-center md:items-center">
-            <h1 className="text-3xl text-center font-bold">
+        <section className="text-texmd:w-[60%] rounded-2xl pt-5 pb-7 px-5 mx-auto mt-5 mb-10 p-57 md:flex md:flex-col md:justify-center md:items-center">
+            <p className="text-center">Time to get technical</p>
+            <h1 className="text-2xl text-center font-bold">
                 I have experience with...
             </h1>
             <div className="flex flex-row justify-center mt-2 gap-2 md:flex-col">

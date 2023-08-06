@@ -16,7 +16,7 @@ module.exports = {
                 text: "#06101e",
             },
             fontFamily: {
-                carme: ["Carme", "sans-serif"],
+                poppins: ["Poppins", "sans-serif"],
             },
         },
     },

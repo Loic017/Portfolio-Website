@@ -60,7 +60,7 @@ function ProjectComponent(props) {
     const { title, description, tools, links, image } = props;
 
     return (
-        <div class="max-w-md mx-auto w-96 rounded-xl shadow-lg text-text bg-accent/20 overflow-hidden md:max-w-2xl">
+        <div class="max-w-md mx-auto w-96 rounded-xl shadow-lg md:text-text md:bg-secondary/50 overflow-hidden md:max-w-2xl">
             <div class="">
                 <div class="relative">
                     <img class="h-32 w-full object-cover" src={image} />
