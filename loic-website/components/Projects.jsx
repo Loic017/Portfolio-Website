@@ -65,8 +65,8 @@ function ProjectComponent(props) {
                 <div className="relative">
                     <img className="h-32 w-full object-cover" src={image} />
                     <div className="absolute bottom-2 right-2 z-10 flex gap-3 justify-end mt-3">
-                        {Object.entries(links).map(([name, url]) => (
-                            <a href={url} className="project-links">
+                        {Object.entries(links).map(([name, url], index) => (
+                            <a key={index} href={url} className="project-links">
                                 {name}
                             </a>
                         ))}
@@ -74,14 +74,14 @@ function ProjectComponent(props) {
                 </div>
                 <div className="p-8">
                     <div className="uppercase tracking-wide text-sm font-semibold">
-                        // {title}
+                        {title}
                     </div>
                     <div className="flex gap-1">
-                        [
-                        {tools.map((tool) => (
-                            <p className="mt-1 text-sm">{tool}</p>
+                        {tools.map((tool, index) => (
+                            <p key={index} className="mt-1 text-sm">
+                                {tool}
+                            </p>
                         ))}
-                        ]
                     </div>
 
                     <p className="mt-1">{description}</p>
