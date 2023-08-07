@@ -83,7 +83,7 @@ function ExperienceComponent(props) {
                             ))}
                         </div> */}
                     </div>
-                    <div className="p-3 pl-5 pr-5 md:w-64">
+                    <div className="p-3 pl-5 pr-5 md:w-full">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-x-3 md:flex md:gap-x-0 opacity-40">
                             {tools.map((tool, index) => (
                                 <p

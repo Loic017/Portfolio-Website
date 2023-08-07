@@ -8,6 +8,8 @@ import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Providers from "./providers";
 
+import { Analytics } from "@vercel/analytics/react";
+
 export const metadata = {
     title: "Loic",
     description: "Hello There!",
@@ -30,6 +32,7 @@ export default function RootLayout({ children }) {
                     </div>
                     <Navbar />
                     {children}
+                    <Analytics />
                 </Providers>
             </body>
         </html>

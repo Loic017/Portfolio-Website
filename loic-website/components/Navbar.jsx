@@ -70,12 +70,12 @@ export default function Navbar() {
                         Experience
                     </span>
                 </Link>
-                <Link href="/socials" className="menu-links group">
+                {/* <Link href="/socials" className="menu-links group">
                     <IoShareSocialOutline />
                     <span className="sidebar-tooltip group-hover:scale-100">
                         Contact
                     </span>
-                </Link>
+                </Link> */}
                 <hr />
                 <button onClick={toggleTheme} className="menu-links group">
                     <MdDarkMode />
