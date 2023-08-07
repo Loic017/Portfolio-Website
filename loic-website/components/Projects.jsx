@@ -9,8 +9,7 @@ export default function Projects() {
                 "A community tool lending platform featuring user authentication, tool map, and tool request system. Developed with a team.",
             tools: ["Django", "HTML", "CSS", "Bootstrap", "Leaflet.js"],
             links: {
-                Website: "https://example.com",
-                Article: "https://example.com",
+                Website: "#",
             },
             image: "https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/joseph-barrientos-49318-unsplash-e1558728034701.jpg?resize=1500%2C1000&ssl=1",
         },
@@ -20,8 +19,23 @@ export default function Projects() {
                 "A post note themed note taking app with Google authentication, note sharing and more.",
             tools: ["Django", "HTML", "CSS", "PostgreSQL", "Neon.tech"],
             links: {
-                Website: "https://example.com",
-                Article: "https://example.com",
+                GitHub: "https://github.com/Loic017/Post-It-Board",
+                Website: "https://post-it-host.vercel.app",
+            },
+            image: "https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/joseph-barrientos-49318-unsplash-e1558728034701.jpg?resize=1500%2C1000&ssl=1",
+        },
+        {
+            title: "Football Manager Image Importer",
+            description:
+                "Football Manager Face and Logo Importer. A Python GUI app. Add player faces or logos into Football Manager with ease.",
+            tools: [
+                "Python",
+                "Customtkinter",
+                "ElementTree XML",
+                "PyInstaller",
+            ],
+            links: {
+                GitHub: "https://github.com/Loic017/Football-Manager-Face-and-Logo-Importer",
             },
             image: "https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/joseph-barrientos-49318-unsplash-e1558728034701.jpg?resize=1500%2C1000&ssl=1",
         },
@@ -30,8 +44,7 @@ export default function Projects() {
             description: "My personal portfolio website.",
             tools: ["Next.js", "TailwindCSS", "Vercel"],
             links: {
-                Website: "https://example.com",
-                Article: "https://example.com",
+                GitHub: "https://github.com/Loic017/Portfolio-Website",
             },
             image: "https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/joseph-barrientos-49318-unsplash-e1558728034701.jpg?resize=1500%2C1000&ssl=1",
         },
@@ -41,15 +54,14 @@ export default function Projects() {
                 "A programmer networking platform based off a business card concept. Includes GitHub user authentication and CRUD APIs for MongoDB.",
             tools: ["Next.js", "MongoDB", "Vercel"],
             links: {
-                Website: "https://example.com",
-                Article: "https://example.com",
+                GitHub: "https://github.com/Loic017/MLH-Hacks-For-Hackers-Hackathon",
             },
             image: "https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/joseph-barrientos-49318-unsplash-e1558728034701.jpg?resize=1500%2C1000&ssl=1",
         },
     ];
 
     return (
-        <section className="grid gap-2 mt-5">
+        <section className="grid gap-2 mt-5 mb-5">
             <h1 className="skills-headings text-center text-3xl">Projects</h1>
             <p className="skills-headings text-center text-md">
                 A collection of projects I have created and/or been a part of.
@@ -94,7 +106,10 @@ function ProjectComponent(props) {
                 <div className="p-3 pl-5 pr-5">
                     <div className="flex gap-3 opacity-40">
                         {tools.map((tool, index) => (
-                            <p key={index} className="text-sm font-semibold">
+                            <p
+                                key={index}
+                                className="text-[13.5px] font-semibold"
+                            >
                                 {tool}
                             </p>
                         ))}
