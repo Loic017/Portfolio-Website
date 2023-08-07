@@ -16,6 +16,10 @@
     @apply z-20 absolute w-[112px] text-center pl-2 mt-1 pr-2 min-w-max max-[840px]:backdrop-blur-0 rounded-md shadow-md text-secondary bg-text/70 backdrop-blur-2xl text-lg font-semibold transition-all duration-100 origin-top scale-0;
 }
 
+[data-theme="dark"] .tech-tooltip {
+    @apply bg-accent text-secondary;
+}
+
 .socials {
     @apply text-text rounded-lg p-2 w-10 h-10 transition-all hover:bg-text/70 hover:rounded-md hover:text-background;
 }
@@ -29,7 +33,7 @@
 }
 
 [data-theme="dark"] .menu-links {
-    @apply text-text;
+    @apply text-secondary hover:text-text;
 }
 
 [data-theme="dark"] .sidebar-tooltip {
@@ -41,7 +45,7 @@
 }
 
 [data-theme="dark"] .skills {
-    @apply bg-secondary/80 hover:bg-text/70 hover:text-secondary;
+    @apply bg-secondary/10 hover:bg-accent hover:text-secondary;
 }
 
 .home-header {
@@ -53,7 +57,7 @@
 }
 
 [data-theme="dark"] .info-back {
-    @apply bg-text;
+    @apply bg-secondary/10;
 }
 
 [data-theme="dark"] .home-header {
@@ -69,11 +73,11 @@
 }
 
 [data-theme="dark"] .skills-headings {
-    @apply font-semibold opacity-80 text-white;
+    @apply font-semibold opacity-100 text-white;
 }
 
 [data-theme="dark"] body {
-    @apply bg-accent text-secondary;
+    @apply bg-text text-secondary;
 }
 
 /* .project-item {
@@ -89,7 +93,7 @@
 }
 
 [data-theme="dark"] .project-dark {
-    @apply bg-text text-white;
+    @apply bg-secondary/10 text-white;
 }
 
 [data-theme="dark"] .desc-dark {
