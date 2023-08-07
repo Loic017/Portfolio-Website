@@ -4,12 +4,12 @@
 
 @layer components {
     .menu-links {
-        @apply shadow-lg relative cursor-pointer w-[50px] h-[50px] flex items-center justify-center text-black rounded-full hover:bg-secondary hover:rounded-xl;
+        @apply shadow-md relative cursor-pointer w-[50px] h-[50px] flex items-center justify-center text-black transition-all rounded-3xl hover:bg-secondary hover:rounded-xl;
     }
 }
 
 .sidebar-tooltip {
-    @apply absolute w-auto p-2 px-4 m-2 min-w-max max-[840px]:scale-100 max-[840px]:right-16 max-[840px]:bg-accent max-[840px]:backdrop-blur-0 min-[841px]:left-16 rounded-md shadow-md text-text bg-accent/20 backdrop-blur-2xl text-lg font-semibold transition-all duration-100 origin-left scale-0;
+    @apply absolute w-auto p-2 px-4 m-2 min-w-max max-[840px]:scale-100 max-[840px]:right-16 min-[841px]:left-16 rounded-md shadow-lg text-text bg-accent/20 backdrop-blur-2xl text-lg font-semibold transition-all duration-100 origin-left scale-0;
 }
 
 .tech-tooltip {
@@ -53,7 +53,7 @@
 }
 
 [data-theme="dark"] .info-back {
-    @apply bg-secondary/10;
+    @apply bg-text;
 }
 
 [data-theme="dark"] .home-header {
@@ -65,7 +65,11 @@
 }
 
 .skills-headings {
-    @apply text-center font-semibold opacity-30;
+    @apply font-semibold opacity-50;
+}
+
+[data-theme="dark"] .skills-headings {
+    @apply font-semibold opacity-80 text-white;
 }
 
 [data-theme="dark"] body {
@@ -81,5 +85,17 @@
 } */
 
 .project-links {
-    @apply bg-accent/60 shadow-md rounded-md px-3 py-1 text-xs transition-all text-secondary hover:bg-text/90 hover:rounded-md hover:text-background;
+    @apply bg-text shadow-md rounded-md px-3 py-1 text-xs transition-all text-secondary  hover:rounded-md  hover:bg-secondary hover:text-text;
+}
+
+[data-theme="dark"] .project-dark {
+    @apply bg-text text-white;
+}
+
+[data-theme="dark"] .desc-dark {
+    @apply text-secondary;
+}
+
+[data-theme="dark"] .project-links {
+    @apply bg-secondary text-text hover:bg-text hover:text-secondary;
 }

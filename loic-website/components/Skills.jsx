@@ -33,33 +33,33 @@ export default function Skills() {
                     <div className="skills-rows">
                         <div className="group">
                             <DiPython className="skills text-8xl text-blue-700" />
-                            <span className="tech-tooltip group-hover:scale-100">
+                            <div className="tech-tooltip group-hover:scale-100">
                                 Python
-                            </span>
+                            </div>
                         </div>
                         <div className="group">
                             <DiJava className="skills text-8xl text-yellow-700" />
-                            <span className="tech-tooltip group-hover:scale-100">
+                            <div className="tech-tooltip group-hover:scale-100">
                                 Java
-                            </span>
+                            </div>
                         </div>
                         <div className="group">
                             <DiJavascript1 className="skills text-8xl text-yellow-500" />
-                            <span className="tech-tooltip group-hover:scale-100">
+                            <div className="tech-tooltip group-hover:scale-100">
                                 JavaScript
-                            </span>
+                            </div>
                         </div>
                         <div className="group">
                             <DiHtml5 className="skills text-8xl text-orange-500" />
-                            <span className="tech-tooltip group-hover:scale-100">
+                            <div className="tech-tooltip group-hover:scale-100">
                                 HTML5
-                            </span>
+                            </div>
                         </div>
                         <div className="group">
                             <DiCss3 className="skills text-8xl text-blue-500" />
-                            <span className="tech-tooltip group-hover:scale-100">
+                            <div className="tech-tooltip group-hover:scale-100">
                                 CSS3
-                            </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -69,45 +69,45 @@ export default function Skills() {
                     <div className="skills-rows">
                         <div className="group">
                             <DiDjango className="skills text-8xl text-green-700" />
-                            <span className="tech-tooltip group-hover:scale-100">
+                            <div className="tech-tooltip group-hover:scale-100">
                                 Django
-                            </span>
+                            </div>
                         </div>
                         <div className="group">
                             <BiLogoFlask className="skills text-8xl text-text" />
-                            <span className="tech-tooltip group-hover:scale-100">
+                            <div className="tech-tooltip group-hover:scale-100">
                                 Flask
-                            </span>
+                            </div>
                         </div>
                         <div className="group">
                             <DiReact className="skills text-8xl text-blue-500" />
-                            <span className="tech-tooltip group-hover:scale-100">
+                            <div className="tech-tooltip group-hover:scale-100">
                                 React
-                            </span>
+                            </div>
                         </div>
                         <div className="group">
                             <TbBrandNextjs className="skills text-8xl text-text" />
-                            <span className="tech-tooltip group-hover:scale-100">
+                            <div className="tech-tooltip group-hover:scale-100">
                                 Next.js
-                            </span>
+                            </div>
                         </div>
                         <div className="group">
                             <BiLogoTailwindCss className="skills text-8xl text-cyan-500" />
-                            <span className="tech-tooltip group-hover:scale-100">
+                            <div className="tech-tooltip group-hover:scale-100">
                                 Tailwind CSS
-                            </span>
+                            </div>
                         </div>
                         <div className="group">
                             <FaBootstrap className="skills text-8xl text-purple-700" />
-                            <span className="tech-tooltip group-hover:scale-100">
+                            <div className="tech-tooltip group-hover:scale-100">
                                 Bootstrap
-                            </span>
+                            </div>
                         </div>
                         <div className="group">
                             <BiLogoPostgresql className="skills text-8xl text-blue-500" />
-                            <span className="tech-tooltip group-hover:scale-100">
+                            <div className="tech-tooltip group-hover:scale-100">
                                 PostgreSQL
-                            </span>
+                            </div>
                         </div>
                     </div>
                 </div>

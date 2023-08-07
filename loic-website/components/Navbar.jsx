@@ -3,15 +3,12 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
-import { IoShareSocialOutline, IoPersonOutline } from "react-icons/io5";
+import { IoShareSocialOutline } from "react-icons/io5";
 import { BsBriefcase, BsProjector } from "react-icons/bs";
 import { MdDarkMode } from "react-icons/md";
 import { PiHamburgerFill } from "react-icons/pi";
-import {
-    AiFillCloseCircle,
-    AiOutlineRightSquare,
-    AiOutlineInfoCircle,
-} from "react-icons/ai";
+import { AiFillCloseCircle, AiOutlineRightSquare } from "react-icons/ai";
+import { CgProfile } from "react-icons/cg";
 
 import Link from "next/link";
 
@@ -56,21 +53,21 @@ export default function Navbar() {
                     </span>
                 </Link>
                 <Link href="/about" className="menu-links group">
-                    <AiOutlineInfoCircle />
+                    <CgProfile />
                     <span className="sidebar-tooltip group-hover:scale-100">
                         About
                     </span>
                 </Link>
-                <Link href="/proj" className="menu-links group">
-                    <BsBriefcase />
+                <Link href="/projects" className="menu-links group">
+                    <BsProjector />
                     <span className="sidebar-tooltip group-hover:scale-100">
                         Projects
                     </span>
                 </Link>
-                <Link href="/proj" className="menu-links group">
-                    <BsProjector />
+                <Link href="/experience" className="menu-links group">
+                    <BsBriefcase />
                     <span className="sidebar-tooltip group-hover:scale-100">
-                        Experiences
+                        Experience
                     </span>
                 </Link>
                 <Link href="/socials" className="menu-links group">
