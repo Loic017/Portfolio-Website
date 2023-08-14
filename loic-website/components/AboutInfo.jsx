@@ -21,13 +21,8 @@ export default function AboutInfo() {
                     brought me on a path of learning and programming.
                 </p>
                 <p className="pl-4 pr-4 md:w-full mx-auto mb-4">
-                    Over the past few years I have delved down many programming
-                    rabbit holes, improving my knowledge and skills along the
-                    way.
-                </p>
-                <p className="pl-4 pr-4 md:w-full mx-auto mb-4">
-                    When I am not typing away, I sometimes become a manager on
-                    Football Manager or I am enjoying some time with my dog.
+                    Over the past few years I have delved down many rabbit
+                    holes, improving my knowledge and skills along the way.
                 </p>
             </div>
         </section>

@@ -24,7 +24,7 @@ export default function Skills() {
         <section className="skills-text text-text md:w-[80%] rounded-2xl pt-5 pb-7 mx-auto mt-5 md:flex md:flex-col md:justify-center md:items-center">
             <p className="text-center">Time to get technical</p>
             <h1 className="text-2xl text-center font-bold">
-                I have experience with...
+                I have experience creating with...
             </h1>
             <div className="flex flex-row text-center justify-center mt-2 gap-2 md:flex-col">
                 <div>

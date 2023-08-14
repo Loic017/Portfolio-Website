@@ -1,6 +1,12 @@
 import React from "react";
 import Image from "next/image";
 
+import postit from "../app/images/postit.png";
+import fmimporter from "../app/images/fmimporter.png";
+import website from "../app/images/website.png";
+import programmercard from "../app/images/programmercard.png";
+import github from "../app/images/github.png";
+
 export default function Projects() {
     const projects = [
         {
@@ -9,7 +15,8 @@ export default function Projects() {
                 "A community tool lending platform featuring user authentication, tool map, and tool request system. Developed with a team.",
             tools: ["Django", "HTML", "CSS", "Bootstrap", "Leaflet.js"],
             links: {
-                Website: "#",
+                "Project's hosting will be setup soon":
+                    "https://www.lorentel.com",
             },
             image: "https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/joseph-barrientos-49318-unsplash-e1558728034701.jpg?resize=1500%2C1000&ssl=1",
         },
@@ -22,7 +29,7 @@ export default function Projects() {
                 GitHub: "https://github.com/Loic017/Post-It-Board",
                 Website: "https://post-it-host.vercel.app",
             },
-            image: "https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/joseph-barrientos-49318-unsplash-e1558728034701.jpg?resize=1500%2C1000&ssl=1",
+            image: postit,
         },
         {
             title: "Football Manager Image Importer",
@@ -37,16 +44,16 @@ export default function Projects() {
             links: {
                 GitHub: "https://github.com/Loic017/Football-Manager-Face-and-Logo-Importer",
             },
-            image: "https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/joseph-barrientos-49318-unsplash-e1558728034701.jpg?resize=1500%2C1000&ssl=1",
+            image: fmimporter,
         },
         {
-            title: "This Website",
-            description: "My personal portfolio website.",
+            title: "My Portfolio Website",
+            description: "This website :)",
             tools: ["Next.js", "TailwindCSS", "Vercel"],
             links: {
                 GitHub: "https://github.com/Loic017/Portfolio-Website",
             },
-            image: "https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/joseph-barrientos-49318-unsplash-e1558728034701.jpg?resize=1500%2C1000&ssl=1",
+            image: website,
         },
         {
             title: "Programmer Card",
@@ -55,8 +62,20 @@ export default function Projects() {
             tools: ["Next.js", "MongoDB", "Vercel"],
             links: {
                 GitHub: "https://github.com/Loic017/MLH-Hacks-For-Hackers-Hackathon",
+                "Project's hosting will be setup soon":
+                    "https://www.lorentel.com",
             },
-            image: "https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/joseph-barrientos-49318-unsplash-e1558728034701.jpg?resize=1500%2C1000&ssl=1",
+            image: programmercard,
+        },
+        {
+            title: "Other",
+            description:
+                "For other small creations such other python scripts or HTML + CSS static websites, check out my GitHub.",
+            tools: ["Next.js", "MongoDB", "Vercel"],
+            links: {
+                GitHub: "https://github.com/Loic017",
+            },
+            image: github,
         },
     ];
 
