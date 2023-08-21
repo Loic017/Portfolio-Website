@@ -11,6 +11,7 @@ import { AiFillCloseCircle, AiOutlineRightSquare } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 // import * as Scroll from 'react-scroll';
 // import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
@@ -41,30 +42,60 @@ export default function Navbar() {
         return null;
     }
 
+    const pathName = usePathname();
+
     return (
         <nav className="max-[840px]:right-0 fixed bottom-2 lg:bottom-8 w-28 z-50">
             <div
                 className={`nav-bar-dark max-[840px]:${burgerClass} h-[450px] w-16 bg-accent/20 backdrop-blur-2xl rounded-xl max-w-[460px] mx-auto px-5 flex flex-col justify-around text-2xl text-white/50 items-center`}
             >
-                <Link href="/" className="menu-links group">
+                <Link
+                    href="/"
+                    className={
+                        pathName == "/"
+                            ? "menu-links-active group"
+                            : "menu-links group"
+                    }
+                >
                     <AiOutlineRightSquare />
                     <span className="sidebar-tooltip group-hover:scale-100">
                         Home
                     </span>
                 </Link>
-                <Link href="/about" className="menu-links group">
+                <Link
+                    href="/about"
+                    className={
+                        pathName == "/about"
+                            ? "menu-links-active group"
+                            : "menu-links group"
+                    }
+                >
                     <CgProfile />
                     <span className="sidebar-tooltip group-hover:scale-100">
                         About
                     </span>
                 </Link>
-                <Link href="/projects" className="menu-links group">
+                <Link
+                    href="/projects"
+                    className={
+                        pathName == "/projects"
+                            ? "menu-links-active group"
+                            : "menu-links group"
+                    }
+                >
                     <BsProjector />
                     <span className="sidebar-tooltip group-hover:scale-100">
                         Projects
                     </span>
                 </Link>
-                <Link href="/experience" className="menu-links group">
+                <Link
+                    href="/experience"
+                    className={
+                        pathName == "/experience"
+                            ? "menu-links-active group"
+                            : "menu-links group"
+                    }
+                >
                     <BsBriefcase />
                     <span className="sidebar-tooltip group-hover:scale-100">
                         Experience

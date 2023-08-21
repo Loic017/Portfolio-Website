@@ -8,6 +8,10 @@
     }
 }
 
+.menu-links-active {
+    @apply shadow-md relative cursor-pointer w-[50px] h-[50px] flex items-center justify-center text-black transition-all rounded-xl bg-secondary hover:rounded-xl;
+}
+
 .sidebar-tooltip {
     @apply absolute w-auto p-2 px-4 m-2 min-w-max max-[840px]:scale-100 max-[840px]:right-16 min-[841px]:left-16 rounded-md shadow-lg text-text bg-accent/20 backdrop-blur-2xl text-lg font-semibold transition-all duration-100 origin-left scale-0;
 }
@@ -34,6 +38,10 @@
 
 [data-theme="dark"] .menu-links {
     @apply text-secondary hover:text-text;
+}
+
+[data-theme="dark"] .menu-links-active {
+    @apply text-text;
 }
 
 [data-theme="dark"] .sidebar-tooltip {
