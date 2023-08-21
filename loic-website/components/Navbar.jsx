@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
+import { usePathname } from "next/navigation";
 
 import { IoShareSocialOutline } from "react-icons/io5";
 import { BsBriefcase, BsProjector } from "react-icons/bs";
@@ -11,13 +12,13 @@ import { AiFillCloseCircle, AiOutlineRightSquare } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 // import * as Scroll from 'react-scroll';
 // import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 export default function Navbar() {
     const [isBurger, setIsBurger] = useState(false);
+    const pathName = usePathname();
 
     function toggleBurger() {
         setIsBurger(!isBurger);
@@ -41,8 +42,6 @@ export default function Navbar() {
     if (!isMounted) {
         return null;
     }
-
-    const pathName = usePathname();
 
     return (
         <nav className="max-[840px]:right-0 fixed bottom-2 lg:bottom-8 w-28 z-50">
