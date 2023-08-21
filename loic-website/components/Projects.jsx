@@ -71,7 +71,7 @@ export default function Projects() {
             title: "Other",
             description:
                 "For other small creations such other python scripts or HTML + CSS static websites, check out my GitHub.",
-            tools: ["Next.js", "MongoDB", "Vercel"],
+            tools: ["github.com/Loic017"],
             links: {
                 GitHub: "https://github.com/Loic017",
             },
@@ -86,7 +86,7 @@ export default function Projects() {
                 A collection of projects I have created and/or been a part of.
             </p>
             <div className="grid gap-4 mt-5">
-                <div className="grid min-[1100px]:grid-cols-2 md:gap-3 gap-5 mx-auto">
+                <div className="grid min-[1100px]:grid-cols-3 md:gap-3 gap-5 mx-auto">
                     {projects.map((project, index) => (
                         <ProjectComponent key={index} {...project} />
                     ))}
@@ -100,7 +100,7 @@ function ProjectComponent(props) {
     const { title, description, tools, links, image } = props;
 
     return (
-        <div className="transition-all project-dark max-w-md h-72 mx-auto w-96 rounded-md shadow-lg md:text-text bg-secondary overflow-hidden md:max-w-2xl">
+        <div className="transition-all project-dark max-w-md h-72 mx-auto w-96 rounded-md md:text-text bg-accent/30 overflow-hidden">
             <div className="">
                 <div className="relative">
                     <Image

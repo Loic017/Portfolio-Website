@@ -1,7 +1,7 @@
 import React from "react";
 
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { SiCodepen } from "react-icons/si";
+import { FaPenAlt, FaCodepen } from "react-icons/fa";
 
 export default function HomeHero() {
     return (
@@ -23,7 +23,10 @@ export default function HomeHero() {
                     <BsLinkedin className="socials" />
                 </a>
                 <a href="https://codepen.io/loic017">
-                    <SiCodepen className="socials" />
+                    <FaCodepen className="socials" />
+                </a>
+                <a href="https://blog.lorentel.com">
+                    <FaPenAlt className="socials" />
                 </a>
             </div>
         </section>

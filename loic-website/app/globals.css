@@ -25,7 +25,7 @@
 }
 
 [data-theme="dark"] .socials {
-    @apply text-secondary hover:bg-primary/70 hover:text-accent;
+    @apply text-secondary hover:bg-secondary hover:text-primary;
 }
 
 [data-theme="dark"] .nav-bar-dark {
