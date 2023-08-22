@@ -52,7 +52,15 @@
     @apply bg-accent/20 shadow-md rounded-md p-2 w-28 h-28 transition-all hover:bg-accent/70 hover:rounded-md hover:text-background;
 }
 
+.skills-break {
+    @apply bg-accent/20 shadow-md rounded-md p-2 w-28 h-5 md:w-5 md:h-28 transition-all hover:bg-accent/70 hover:rounded-md hover:text-background;
+}
+
 [data-theme="dark"] .skills {
+    @apply bg-secondary/10 hover:bg-accent hover:text-secondary;
+}
+
+[data-theme="dark"] .skills-break {
     @apply bg-secondary/10 hover:bg-accent hover:text-secondary;
 }
 
@@ -65,7 +73,7 @@
 }
 
 [data-theme="dark"] .info-back {
-    @apply bg-secondary/10;
+    @apply text-secondary;
 }
 
 [data-theme="dark"] .home-header {
@@ -97,7 +105,7 @@
 } */
 
 .project-links {
-    @apply bg-text shadow-md rounded-md px-3 py-1 text-xs transition-all text-secondary  hover:rounded-md  hover:bg-secondary hover:text-text;
+    @apply bg-secondary shadow-md rounded-md px-3 py-2 text-xs transition-all text-text  hover:bg-text hover:text-secondary md:bg-text md:text-secondary md:hover:bg-secondary md:hover:text-text;
 }
 
 [data-theme="dark"] .project-dark {
@@ -110,4 +118,28 @@
 
 [data-theme="dark"] .project-links {
     @apply bg-secondary text-text hover:bg-text hover:text-secondary;
+}
+
+/* Change the scrollbar width */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Change the scrollbar track color */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Change the scrollbar thumb color */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+/* Change the scrollbar corner color */
+::-webkit-scrollbar-corner {
+    background-color: #f1f1f1;
+}
+
+html {
+    scroll-behavior: smooth;
 }

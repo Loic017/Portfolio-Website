@@ -2,12 +2,8 @@ import React from "react";
 
 export default function AboutInfo() {
     return (
-        <section className="skills-text info-back overflow-hidden md:mt-10 md:text-left text-center md:w-[800px] w-390px shadow-xl w-full mx-auto text-text bg-secondary/50 rounded-2xl flex md:flex-row flex-col md:gap-2">
-            <img
-                className="md:h-auto md:w-[200px] object-cover h-[100px] w-full"
-                src="https://images.unsplash.com/photo-1658409524023-5c835864baf2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1450&q=80"
-                alt=""
-            />
+        <section className="skills-text info-back overflow-hidden md:mt-10 md:text-left text-center md:w-[800px] w-390px w-full mx-auto text-text rounded-sm flex flex-col md:gap-2">
+            <div className="h-[300px] w-full rounded-t-full bg-gradient-to-b from-primary to-transparent mx-auto text-center"></div>
 
             <div className="py-2">
                 <h1 className="mt-2 mb-2 font-bold text-2xl w-[70%] mx-auto">
@@ -24,6 +20,38 @@ export default function AboutInfo() {
                     Over the past few years I have delved down many rabbit
                     holes, improving my knowledge and skills along the way.
                 </p>
+                <h1 className="mt-2 mb-2 font-bold text-2xl w-[70%] mx-auto">
+                    Where to find me
+                </h1>
+                <ul className="pl-4 pr-4 md:w-full mx-auto">
+                    <li>
+                        Posts/Blog: &nbsp;
+                        <a
+                            className="text-primary hover:text-accent"
+                            href="https://blog.lorentel.com"
+                        >
+                            blog.lorentel.com
+                        </a>
+                    </li>
+                    <li>
+                        GitHub: &nbsp;
+                        <a
+                            className="text-primary hover:text-accent"
+                            href="https://github.com/loic017"
+                        >
+                            github.com/loic017
+                        </a>
+                    </li>
+                    <li>
+                        LinkedIn: &nbsp;
+                        <a
+                            className="text-primary hover:text-accent"
+                            href="https://www.linkedin.com/in/lemoineloic/"
+                        >
+                            linkedin.com/in/lemoineloic
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
     );

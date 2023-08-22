@@ -21,15 +21,12 @@ import { TbBrandNextjs } from "react-icons/tb";
 
 export default function Skills() {
     return (
-        <section className="skills-text text-text md:w-[80%] rounded-2xl pt-5 pb-7 mx-auto mt-5 md:flex md:flex-col md:justify-center md:items-center">
-            <p className="text-center">Time to get technical</p>
+        <section className="skills-text text-text md:w-[80%] pt-5 pb-7 mx-auto mt-6 md:flex md:flex-col md:items-center md:justify-between border-t border-text">
             <h1 className="text-2xl text-center font-bold">
                 I have experience creating with...
             </h1>
-            <div className="flex flex-row text-center justify-center mt-2 gap-2 md:flex-col">
+            <div className="flex flex-row text-center justify-center mt-2 gap-2">
                 <div>
-                    <h2 className="skills-headings">Languages</h2>
-                    <h3 className="skills-headings text-sm">~</h3>
                     <div className="skills-rows">
                         <div className="group">
                             <DiPython className="skills text-8xl text-blue-700" />
@@ -61,12 +58,9 @@ export default function Skills() {
                                 CSS3
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div>
-                    <h2 className="skills-headings">Frameworks</h2>
-                    <h3 className="skills-headings text-sm">& More</h3>
-                    <div className="skills-rows">
+                        <div className="">
+                            <div className="skills-break text-8x"></div>
+                        </div>
                         <div className="group">
                             <DiDjango className="skills text-8xl text-green-700" />
                             <div className="tech-tooltip group-hover:scale-100">
