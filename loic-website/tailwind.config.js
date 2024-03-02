@@ -22,7 +22,7 @@ module.exports = {
         require("tailwind-typewriter")({
             wordsets: {
                 roles: {
-                    words: ["Software Engineer", "Full Stack Developer"],
+                    words: ["Computer Science Student", "???"],
                     writeSpeed: 0.1,
                 },
             },

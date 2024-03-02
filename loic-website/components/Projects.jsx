@@ -3,24 +3,43 @@ import Image from "next/image";
 
 import postit from "../app/images/postit.png";
 import fmimporter from "../app/images/fmimporter.png";
+import toolgether from "../app/images/toolgether.png";
 import website from "../app/images/website.png";
 import programmercard from "../app/images/programmercard.png";
 import github from "../app/images/github.png";
 import food from "../app/images/food.jpg";
+import tiny from "../app/images/tiny.png";
 
 import { BsLink45Deg } from "react-icons/bs";
 
 const projects = [
     {
         index: 7,
-        title: "Toolgether",
+        title: "Dissertation: TinyML For Epilectic Seizures",
+        description:
+            "A dissertation exploring the development and implementation of Machine Learning for the detection of epileptic seizures on an Arduino Platform.",
+        tools: [
+            "Tiny Machine Learning",
+            "PyTorch",
+            "TensorFlow",
+            "MNE/EEG Data",
+            "Arduino",
+        ],
+        links: {
+            Undergoing: "https://blog.lorentel.com",
+        },
+        image: tiny,
+    },
+    {
+        index: 7,
+        title: "Group Project: Toolgether",
         description:
             "A community tool lending platform featuring user authentication, area tool map, and a tool request system. Developed within a team.",
         tools: ["Django", "HTML", "CSS", "Bootstrap", "Leaflet.js"],
         links: {
-            "Blog Post": "https://blog.lorentel.com",
+            "Info Coming Soon": "https://blog.lorentel.com",
         },
-        image: "https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/joseph-barrientos-49318-unsplash-e1558728034701.jpg?resize=1500%2C1000&ssl=1",
+        image: toolgether,
     },
     {
         index: 6,
@@ -30,28 +49,9 @@ const projects = [
         tools: ["Django", "HTML", "CSS", "PostgreSQL", "Neon.tech"],
         links: {
             GitHub: "https://github.com/Loic017/Post-It-Board",
-            Website: "https://post-it-host.vercel.app",
+            Link: "https://post-it-host.vercel.app",
         },
         image: postit,
-    },
-    {
-        index: 5,
-        title: "More Meals",
-        description:
-            "A meal planning app with recipes and auto-shopping lists.",
-        tools: [
-            "Django",
-            "Django Rest",
-            "Next.js",
-            "Tailwind",
-            "PostgreSQL",
-            "Neon.tech",
-        ],
-        links: {
-            GitHub: "https://github.com/Loic017/More-Meals-v2",
-            "Blog Post": "https://blog.lorentel.com",
-        },
-        image: food,
     },
     {
         index: 4,
@@ -83,7 +83,7 @@ const projects = [
         tools: ["Next.js", "MongoDB", "Vercel"],
         links: {
             GitHub: "https://github.com/Loic017/MLH-Hacks-For-Hackers-Hackathon",
-            "Blog Post": "https://blog.lorentel.com",
+            "Info Coming Soon": "https://blog.lorentel.com",
         },
         image: programmercard,
     },
@@ -91,7 +91,7 @@ const projects = [
         index: 1,
         title: "GitHub Profile",
         description:
-            "For other small creations such other python scripts or HTML + CSS static websites, check out my GitHub.",
+            "For other small creations such as other python scripts or HTML + CSS static websites, check out my GitHub.",
         tools: ["github.com/Loic017"],
         links: {
             GitHub: "https://github.com/Loic017",
@@ -105,7 +105,7 @@ export default function Projects() {
         <section className="grid gap-2 mt-5 mb-5">
             <h1 className="skills-headings text-center text-3xl">Projects</h1>
             <p className="skills-headings text-center text-md">
-                A collection of projects I have created and/or been a part of.
+                A collection of projects I have developed and/or been a part of.
             </p>
             <div className="grid gap-4 mt-5">
                 <div className="grid min-[1100px]:grid-cols-1 md:gap-x-10 mx-auto">

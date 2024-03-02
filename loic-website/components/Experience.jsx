@@ -1,20 +1,36 @@
 import React from "react";
 import Image from "next/image";
 
+import blacksquare from "../app/images/blacksquare.png";
+
 import cityofwestminstercollege from "../app/images/cityofwestminstercollege.png";
 
 const projects = [
     {
-        index: 2,
+        index: 3,
+        title: "???",
+        role: "???",
+        tools: ["???"],
+        links: {
+            Website: "https://example.com",
+            Article: "https://example.com",
+        },
+        image: blacksquare,
+        dates: "???",
+    },
+    {
+        index: 3,
         title: "Cardiff University",
         role: "BSc Computer Science",
-        tools: ["Second Year: First Class"],
+        tools: [
+            "Artificial Intelligence, Computer Vision, Large-Scale Databases, Robotics",
+        ],
         links: {
             Website: "https://example.com",
             Article: "https://example.com",
         },
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Cardiff_University_%28logo%29.svg/1200px-Cardiff_University_%28logo%29.svg.png",
-        dates: "2021 - Present (2024 Graduation)",
+        dates: "2021 - 2024",
     },
     {
         index: 1,
@@ -35,7 +51,7 @@ export default function Experiences() {
         <section className="grid gap-2 mt-5">
             <h1 className="skills-headings text-center text-3xl">Experience</h1>
             <p className="skills-headings text-center text-md">
-                Roles & experience timeline.
+                A timeline of my education and work experience.
             </p>
             <div className="grid gap-4 mt-7 mb-6">
                 <div className="grid min-[1100px]:grid-cols-1 md:gap-0 mx-auto">
