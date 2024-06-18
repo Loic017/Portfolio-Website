@@ -6,8 +6,8 @@ import underconstruction from "../app/images/under-construction-warning-sign-vec
 
 export default function AboutInfo() {
     return (
-        <section className="skills-text info-back overflow-hidden md:mt-10 md:text-left text-center md:w-[800px] w-390px w-full mx-auto text-text rounded-sm flex flex-col md:gap-2">
-            <div className="text-center">
+        <section className="skills-text info-back overflow-hidden md:mt-10 md:text-left text-center md:w-[1100px] w-390px w-full mx-auto text-text rounded-sm flex flex-col md:gap-2">
+            <div className="text-left">
                 <h1 className="text-3xl font-bold mb-5 mt-10">
                     Hello there! Im Loic,
                 </h1>
@@ -19,23 +19,78 @@ export default function AboutInfo() {
                     many rabbit holes, improving my knowledge and skills along
                     the way.
                 </p>
-
                 <p className="">
-                    I have experience developing various systems, from web
-                    applications to machine learning applications.
+                    While having experience developing various systems from web
+                    applications to software development, I have an interest in
+                    researching and developing machine learning solutions that
+                    can be used to improve and benefit society. I hope that my
+                    work can be used to help others and eventually make a
+                    positive impact on the world.
                 </p>
-
-                <div className="text-center">
-                    <h1 className="text-sm font-bold mb-1 mt-5">
-                        To be updated
+                <hr className="bg-background h-1 mt-5 mb-5 rounded" />
+                <div className="about-mini-section">
+                    <h1 className="text-3xl font-bold mb-5 mt-10">
+                        Publications
                     </h1>
-                    <Image
-                        className="md:h-full w-full h-auto md:w-40 object-cover backdrop-blur-sm m-auto mt-1"
-                        src={underconstruction}
-                        width={500}
-                        height={500}
-                    />
+                    <div className="publication-item">
+                        <p>
+                            <b>
+                                Epileptic seizure detection with Tiny Machine
+                                Learning
+                            </b>
+                        </p>
+                        <p>Loic Lorente Lemoine, Nhat Pham MobiUK 2024</p>
+                        <p>
+                            <b>MobiUK 2024</b> - Sixth UK Mobile, Wearable and
+                            Ubiquitous Systems Research Symposium.
+                        </p>
+                    </div>
                 </div>
+                <div className="about-mini-section">
+                    <h1 className="text-3xl font-bold mb-5 mt-10">Awards</h1>
+                    <div className="award-item">
+                        <p>
+                            <b>
+                                First Prize, Student Poster Competition on “AI,
+                                Smart Healthcare, and IoT” - 2024
+                            </b>
+                        </p>
+                        <p>
+                            Cardiff University and Vietnam National University-
+                            Ho Chi Minh University of Technology
+                        </p>
+                    </div>
+                </div>
+                <div className="about-mini-section">
+                    <h1 className="text-3xl font-bold mb-5 mt-10">
+                        Technologies
+                    </h1>
+                    <p className="mb-2">
+                        I have experience working with a variety of technologies
+                        for different purposes and projects. This is including
+                        but not limited to:
+                    </p>
+                    <p>
+                        Languages: Python, Java, HTML, CSS, JavaScript, MATLAB
+                    </p>
+                    <p>
+                        Frameworks and Libraries: PyTorch, Django, React,
+                        Tailwind, Bootstrap
+                    </p>
+                </div>
+            </div>
+            <hr className="bg-background h-1 mt-5 mb-5 rounded" />
+
+            <div className="text-center">
+                <h1 className="text-sm font-bold mb-1 mt-5">
+                    Bare with me as I update this page.
+                </h1>
+                <Image
+                    className="md:h-full w-full h-auto md:w-40 object-cover backdrop-blur-sm m-auto mt-1"
+                    src={underconstruction}
+                    width={500}
+                    height={500}
+                />
             </div>
         </section>
     );
