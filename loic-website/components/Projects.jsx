@@ -12,12 +12,12 @@ import tiny from "../app/images/tiny.png";
 
 import { BsLink45Deg } from "react-icons/bs";
 
-const projects = [
+const research = [
     {
-        index: 7,
-        title: "Dissertation: TinyML For Epilectic Seizures",
+        index: 8,
+        title: "Epileptic-seizure-detection-with-Tiny-Machine-Learning",
         description:
-            "A dissertation exploring the development and implementation of Machine Learning for the detection of epileptic seizures on an Arduino Platform.",
+            "A study exploring the development and implementation of efficient Tiny Machine Learning for the detection of epileptic seizures on an Arduino Platform. Supervised by Nhat Pham for my BSc Computer Science Dissertation.",
         tools: [
             "Tiny Machine Learning",
             "PyTorch",
@@ -26,15 +26,20 @@ const projects = [
             "Arduino",
         ],
         links: {
-            Undergoing: "https://blog.lorentel.com",
+            Information: "https://blog.lorentel.com/tinyml-seizure-detection",
+            Repository:
+                "https://github.com/Loic017/Epileptic-seizure-detection-with-Tiny-Machine-Learning",
         },
         image: tiny,
     },
+];
+
+const projects = [
     {
         index: 7,
-        title: "Group Project: Toolgether",
+        title: "Toolgether",
         description:
-            "A community tool lending platform featuring user authentication, area tool map, and a tool request system. Developed within a team.",
+            "A community tool lending platform featuring user authentication, tool proximity map, and a tool request system. Developed within a team for a group project.",
         tools: ["Django", "HTML", "CSS", "Bootstrap", "Leaflet.js"],
         links: {
             "Info Coming Soon": "https://blog.lorentel.com",
@@ -103,11 +108,29 @@ const projects = [
 export default function Projects() {
     return (
         <section className="grid gap-2 mt-5 mb-5">
-            <h1 className="skills-headings text-center text-3xl">Projects</h1>
-            <p className="skills-headings text-center text-md">
-                A collection of projects I have developed and/or been a part of.
+            <h1 className="skills-headings text-center text-3xl">My Work</h1>
+            <p className="skills-headings text-center text-md w-[550px] mx-auto">
+                This is a collection of projects I have developed and/or been a
+                part of. This includes research work alongside other personal
+                projects. For more information on each piece of work, follow the
+                attached links.
             </p>
-            <div className="grid gap-4 mt-5">
+            <hr className="bg-background h-1 mt-5 mb-5 rounded" />
+            <h2 className="skills-headings text-center text-2xl">
+                Research Projects
+            </h2>
+            <div className="grid gap-4">
+                <div className="grid min-[1100px]:grid-cols-1 md:gap-x-10 mx-auto">
+                    {research.map((research, index) => (
+                        <ProjectComponent key={index} {...research} />
+                    ))}
+                </div>
+            </div>
+            <hr className="bg-background h-1 mt-5 mb-5 rounded" />
+            <h2 className="skills-headings text-center text-2xl">
+                Other Personal Projects
+            </h2>
+            <div className="grid gap-4">
                 <div className="grid min-[1100px]:grid-cols-1 md:gap-x-10 mx-auto">
                     {projects.map((project, index) => (
                         <ProjectComponent key={index} {...project} />
@@ -123,15 +146,7 @@ function ProjectComponent(props) {
 
     return (
         <div className="flex-col">
-            {index === projects.length ? (
-                <div>
-                    <div>
-                        <div className="w-6 h-6 border-4 border-accent mx-auto rotate-45"></div>
-                        <div className="w-1 h-10 bg-accent mx-auto"></div>
-                    </div>
-                </div>
-            ) : null}
-            <div className="transition-all project-dark h-72 md:h-60 mx-auto w-96 rounded-md md:text-text shadow-md bg-secondary overflow-hidden md:w-[800px] md:flex">
+            <div className="m-5 transition-all project-dark h-72 md:h-60 mx-auto w-96 rounded-md md:text-text shadow-md bg-secondary overflow-hidden md:w-[1100px] md:flex">
                 <div className="relative">
                     <Image
                         className="h-32 w-full md:h-full md:w-80 object-cover backdrop-blur-sm"
@@ -181,15 +196,6 @@ function ProjectComponent(props) {
                     </div>
                 </div>
             </div>
-            {index === 1 ? (
-                <div>
-                    <div className="w-1 h-10 bg-accent mx-auto"></div>
-                    <div className="w-6 h-6 border-4 border-accent mx-auto rounded-full"></div>
-                </div>
-            ) : null}
-            {index !== 1 ? (
-                <div className="w-1 h-10 bg-accent mx-auto"></div>
-            ) : null}
         </div>
     );
 }

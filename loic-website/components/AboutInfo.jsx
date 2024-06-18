@@ -1,57 +1,41 @@
 import React from "react";
 
+import Image from "next/image";
+
+import underconstruction from "../app/images/under-construction-warning-sign-vector.jpg";
+
 export default function AboutInfo() {
     return (
         <section className="skills-text info-back overflow-hidden md:mt-10 md:text-left text-center md:w-[800px] w-390px w-full mx-auto text-text rounded-sm flex flex-col md:gap-2">
-            <div className="h-[300px] w-full rounded-t-full bg-gradient-to-b from-primary to-transparent mx-auto text-center"></div>
-
-            <div className="py-2">
-                <h1 className="mt-2 mb-2 font-bold text-2xl w-[70%] mx-auto">
+            <div className="text-center">
+                <h1 className="text-3xl font-bold mb-5 mt-10">
                     Hello there! Im Loic,
                 </h1>
-                <p className="pl-4 pr-4 md:w-full mx-auto mb-4">
-                    I am a Computer Science undergraduate in my third year at
-                    Cardiff University. My enthusiasm for
-                    <bold className="font-bold"> problem-solving</bold> and my
-                    affinity for <bold className="font-bold">creating</bold> has
-                    brought me on a path of learning and programming.
+                <p className="mb-2">
+                    I am a graduating Computer Science student at Cardiff
+                    University. My enthusiasm for problem-solving and my
+                    affinity for creating has brought me on a path of learning
+                    and programming. Over the past few years I have delved down
+                    many rabbit holes, improving my knowledge and skills along
+                    the way.
                 </p>
-                <p className="pl-4 pr-4 md:w-full mx-auto mb-4">
-                    Over the past few years I have delved down many rabbit
-                    holes, improving my knowledge and skills along the way.
+
+                <p className="">
+                    I have experience developing various systems, from web
+                    applications to machine learning applications.
                 </p>
-                <h1 className="mt-2 mb-2 font-bold text-2xl w-[70%] mx-auto">
-                    Where to find me
-                </h1>
-                <ul className="pl-4 pr-4 md:w-full mx-auto">
-                    <li>
-                        Posts/Blog: &nbsp;
-                        <a
-                            className="text-primary hover:text-accent"
-                            href="https://blog.lorentel.com"
-                        >
-                            blog.lorentel.com
-                        </a>
-                    </li>
-                    <li>
-                        GitHub: &nbsp;
-                        <a
-                            className="text-primary hover:text-accent"
-                            href="https://github.com/loic017"
-                        >
-                            github.com/loic017
-                        </a>
-                    </li>
-                    <li>
-                        LinkedIn: &nbsp;
-                        <a
-                            className="text-primary hover:text-accent"
-                            href="https://www.linkedin.com/in/lemoineloic/"
-                        >
-                            linkedin.com/in/lemoineloic
-                        </a>
-                    </li>
-                </ul>
+
+                <div className="text-center">
+                    <h1 className="text-sm font-bold mb-1 mt-5">
+                        To be updated
+                    </h1>
+                    <Image
+                        className="md:h-full w-full h-auto md:w-40 object-cover backdrop-blur-sm m-auto mt-1"
+                        src={underconstruction}
+                        width={500}
+                        height={500}
+                    />
+                </div>
             </div>
         </section>
     );

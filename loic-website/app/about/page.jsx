@@ -6,7 +6,7 @@ export default function About() {
     return (
         <section className="max-w-7xl mx-auto">
             <AboutInfo />
-            <Skills />
+            {/* <Skills /> */}
         </section>
     );
 }

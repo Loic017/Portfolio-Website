@@ -19,6 +19,8 @@ import { FaBootstrap } from "react-icons/fa";
 
 import { TbBrandNextjs } from "react-icons/tb";
 
+import { SiPytorch } from "react-icons/si";
+
 export default function Skills() {
     return (
         <section className="skills-text text-text md:w-[80%] pt-5 pb-7 mx-auto mt-6 md:flex md:flex-col md:items-center md:justify-between border-t border-text">
@@ -59,7 +61,13 @@ export default function Skills() {
                             </div>
                         </div>
                         <div className="">
-                            <div className="skills-break text-8x"></div>
+                            <div className="skills-break text-8xl"></div>
+                        </div>
+                        <div className="group">
+                            <SiPytorch className="skills text-8xl text-orange-500" />
+                            <div className="tech-tooltip group-hover:scale-100">
+                                PyTorch
+                            </div>
                         </div>
                         <div className="group">
                             <DiDjango className="skills text-8xl text-green-700" />

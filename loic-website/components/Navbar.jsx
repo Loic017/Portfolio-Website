@@ -44,9 +44,9 @@ export default function Navbar() {
     }
 
     return (
-        <nav className="max-[840px]:right-0 fixed bottom-2 lg:bottom-8 w-28 z-50">
+        <nav className="max-[840px]:right-0 fixed bottom-2 lg:bottom-8 w-36 z-50">
             <div
-                className={`nav-bar-dark max-[840px]:${burgerClass} h-[450px] w-16 bg-accent/20 backdrop-blur-2xl rounded-xl max-w-[460px] mx-auto px-5 flex flex-col justify-around text-2xl text-white/50 items-center`}
+                className={`nav-bar-dark max-[840px]:${burgerClass} h-[500px] w-16 bg-accent/20 backdrop-blur-2xl rounded-2xl max-w-[460px] mx-auto px-5 flex flex-col justify-around text-2xl text-white/50 items-center`}
             >
                 <Link
                     href="/"
@@ -58,7 +58,7 @@ export default function Navbar() {
                 >
                     <AiOutlineRightSquare />
                     <span className="sidebar-tooltip group-hover:scale-100">
-                        Home
+                        Welcome
                     </span>
                 </Link>
                 <Link
@@ -71,7 +71,7 @@ export default function Navbar() {
                 >
                     <CgProfile />
                     <span className="sidebar-tooltip group-hover:scale-100">
-                        About
+                        About Me
                     </span>
                 </Link>
                 <Link
@@ -84,7 +84,7 @@ export default function Navbar() {
                 >
                     <BsProjector />
                     <span className="sidebar-tooltip group-hover:scale-100">
-                        Projects
+                        My Work
                     </span>
                 </Link>
                 <Link
@@ -103,7 +103,7 @@ export default function Navbar() {
                 {/* <Link href="/socials" className="menu-links group">
                     <IoShareSocialOutline />
                     <span className="sidebar-tooltip group-hover:scale-100">
-                        Contact
+                        My Publications & Awards
                     </span>
                 </Link> */}
                 <hr />

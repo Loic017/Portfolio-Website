@@ -7,7 +7,7 @@ import cityofwestminstercollege from "../app/images/cityofwestminstercollege.png
 
 const projects = [
     {
-        index: 3,
+        index: 2,
         title: "???",
         role: "???",
         tools: ["???"],
@@ -19,11 +19,11 @@ const projects = [
         dates: "???",
     },
     {
-        index: 3,
+        index: 1,
         title: "Cardiff University",
-        role: "BSc Computer Science",
+        role: "BSc Computer Science - [Final Grade Soon]",
         tools: [
-            "Artificial Intelligence, Computer Vision, Large-Scale Databases, Robotics",
+            "Artificial Intelligence, Computer Vision, Large-Scale Databases, Robotics, etc",
         ],
         links: {
             Website: "https://example.com",
@@ -31,18 +31,6 @@ const projects = [
         },
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Cardiff_University_%28logo%29.svg/1200px-Cardiff_University_%28logo%29.svg.png",
         dates: "2021 - 2024",
-    },
-    {
-        index: 1,
-        title: "City of Westminster College",
-        role: "BTEC IT Extended Diploma",
-        tools: ["Final Grade: D*DD"],
-        links: {
-            Website: "https://example.com",
-            Article: "https://example.com",
-        },
-        image: cityofwestminstercollege,
-        dates: "2019 - 2021",
     },
 ];
 
