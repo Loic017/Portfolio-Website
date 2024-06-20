@@ -22,7 +22,13 @@ module.exports = {
         require("tailwind-typewriter")({
             wordsets: {
                 roles: {
-                    words: ["???"],
+                    words: [
+                        "Welcome!",
+                        "Bem-vindo!",
+                        "Bienvenido!",
+                        "Benvenuto!",
+                        "Bienvenue!",
+                    ],
                     writeSpeed: 0.1,
                 },
             },

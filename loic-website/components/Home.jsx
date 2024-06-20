@@ -72,7 +72,7 @@ export default function HomeHero() {
                 {news.map((newsItem, index) => (
                     <p
                         key={index}
-                        className="text-lg text-start mt-3 w-[900px] max-[1200px]:w-[700px] max-[960px]:w-[600px] max-[630px]:w-[450px] mx-auto"
+                        className="text-lg text-start mt-3 w-[900px] max-[1200px]:w-[700px] max-[960px]:w-[600px] max-[630px]:w-[450px] max-[470px]:w-[300px] mx-auto"
                     >
                         <b className="text-primary">{newsItem.date}</b>{" "}
                         {newsItem.text}
