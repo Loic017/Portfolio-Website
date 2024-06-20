@@ -69,9 +69,13 @@ export default function HomeHero() {
                     <h1 className="text-3xl font-extrabold">Highlights</h1>
                 </div>
                 <h2 className="text-center text-2xl font-bold">. . .</h2>
-                {news.map((news) => (
-                    <p className="text-lg text-start mt-3 w-[900px] max-[1200px]:w-[700px] max-[960px]:w-[600px] max-[630px]:w-[450px] mx-auto">
-                        <b className="text-primary">{news.date}</b> {news.text}
+                {news.map((newsItem, index) => (
+                    <p
+                        key={index}
+                        className="text-lg text-start mt-3 w-[900px] max-[1200px]:w-[700px] max-[960px]:w-[600px] max-[630px]:w-[450px] mx-auto"
+                    >
+                        <b className="text-primary">{newsItem.date}</b>{" "}
+                        {newsItem.text}
                     </p>
                 ))}
             </div>
