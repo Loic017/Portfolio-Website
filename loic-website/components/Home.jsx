@@ -16,10 +16,10 @@ const news = [
         date: "May 2024",
         text: (
             <>
-                I have submitted my BSc Computer Science dissertation 'Design a
-                tiny machine learning model to detect epileptic seizures on
-                wearables'. Information and results will be available soon with
-                available information displayed in{" "}
+                I have submitted my BSc Computer Science dissertation
+                &apos;Design a tiny machine learning model to detect epileptic
+                seizures on wearables&apos;. Information and results will be
+                available soon with available information displayed in{" "}
                 <a
                     href="https://blog.lorentel.com"
                     target="_blank"
