@@ -72,6 +72,22 @@
     @apply text-secondary;
 }
 
+[data-theme="dark"] .news-text-dark {
+    @apply text-text;
+}
+
+.news-text-light {
+    @apply text-secondary;
+}
+
+[data-theme="dark"] .news-dark {
+    @apply bg-background;
+}
+
+.news-light {
+    @apply bg-text;
+}
+
 [data-theme="dark"] .info-back {
     @apply text-secondary;
 }
