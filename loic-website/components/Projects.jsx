@@ -9,15 +9,16 @@ import programmercard from "../app/images/programmercard.png";
 import github from "../app/images/github.png";
 import food from "../app/images/food.jpg";
 import tiny from "../app/images/tiny.png";
+import devices from "../app/images/devices.png";
 
 import { BsLink45Deg } from "react-icons/bs";
 
 const research = [
     {
-        index: 8,
-        title: "Epileptic-seizure-detection-with-Tiny-Machine-Learning",
+        index: 0,
+        title: "Epileptic seizure detection with Tiny Machine Learning",
         description:
-            "A study exploring the development and implementation of efficient Tiny Machine Learning for the detection of epileptic seizures on an Arduino Platform. Supervised by Nhat Pham for my BSc Computer Science Dissertation.",
+            "A study exploring the development and implementation of efficient Tiny Machine Learning for the detection of epileptic seizures on an Arduino Platform. Supervised by Nhat Pham for my BSc Computer Science Dissertation 'Design a tiny machine learning model to detect epileptic seizures on wearables'.",
         tools: [
             "Tiny Machine Learning",
             "PyTorch",
@@ -30,7 +31,7 @@ const research = [
             Repository:
                 "https://github.com/Loic017/Epileptic-seizure-detection-with-Tiny-Machine-Learning",
         },
-        image: tiny,
+        image: devices,
     },
 ];
 
@@ -131,9 +132,9 @@ export default function Projects() {
                 Other Personal Projects
             </h2>
             <div className="grid gap-4">
-                <div className="grid min-[1100px]:grid-cols-1 md:gap-x-10 mx-auto">
+                <div className="grid min-[1100px]:grid-cols-2 md:gap-x-10 mx-auto">
                     {projects.map((project, index) => (
-                        <ProjectComponent key={index} {...project} />
+                        <ProjectComponent2 key={index} {...project} />
                     ))}
                 </div>
             </div>
@@ -150,6 +151,65 @@ function ProjectComponent(props) {
                 <div className="relative">
                     <Image
                         className="h-32 w-full md:h-full md:w-80 object-cover backdrop-blur-sm"
+                        src={image}
+                        width={500}
+                        height={500}
+                        alt={`Picture of ${title}`}
+                    />
+                    <div className="md:hidden absolute bottom-2 right-2 z-10 flex gap-3 justify-end mt-3">
+                        {Object.entries(links).map(([name, url], index) => (
+                            <a
+                                key={index}
+                                href={url}
+                                className="project-links font-semibold"
+                            >
+                                {name}
+                            </a>
+                        ))}
+                    </div>
+                </div>
+                <div className="p-3 pl-5 pr-5 md:w-full md:h-60 md:p-7 md:py-5 md:flex md:flex-col md:justify-between">
+                    <div className="flex gap-3 md:gap-5 opacity-40">
+                        {tools.map((tool, index) => (
+                            <p
+                                key={index}
+                                className="text-[13.5px] font-semibold"
+                            >
+                                {tool}
+                            </p>
+                        ))}
+                    </div>
+                    <div className="uppercase tracking-wide text-2xl font-bold mt-1">
+                        {title}
+                    </div>
+                    <p className="mt-1 text-[15px] desc-dark ">{description}</p>
+                    <div className="hidden md:flex gap-2 mt-3 items-center self-end">
+                        <BsLink45Deg />
+                        {Object.entries(links).map(([name, url], index) => (
+                            <a
+                                key={index}
+                                href={url}
+                                className="project-links font-semibold flex items-center"
+                            >
+                                {name}
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+function ProjectComponent2(props) {
+    const { index, title, description, tools, links, image } = props;
+
+    return (
+        <div className="flex-col">
+            <div className="m-5 transition-all project-dark h-72 md:h-60 mx-auto w-56 rounded-md md:text-text shadow-md bg-secondary overflow-hidden md:w-[600px] md:flex">
+                <div className="relative">
+                    <Image
+                        className="h-32 w-full md:h-full md:w-64 object-cover backdrop-blur-sm"
                         src={image}
                         width={500}
                         height={500}

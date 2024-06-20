@@ -3,6 +3,40 @@ import React from "react";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { FaPenAlt, FaCodepen, FaScroll } from "react-icons/fa";
 
+const news = [
+    {
+        date: "June 2024",
+        text: "I have won the first prize award in the Cardiff University and VietnamNational University-Ho Chi Minh University of Technology Student Poster Competition on 'AI, Smart Healthcare, and' in 2024.",
+    },
+    {
+        date: "May 2024",
+        text: "My abstract on the preliminary results from my study on 'Epileptic seizure detection with Tiny Machine Learning' has been accepted to the MobiUK 2024 conference.",
+    },
+    {
+        date: "May 2024",
+        text: (
+            <>
+                I have submitted my BSc Computer Science dissertation 'Design a
+                tiny machine learning model to detect epileptic seizures on
+                wearables'. Information and results will be available soon with
+                available information displayed in{" "}
+                <a
+                    href="https://blog.lorentel.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <u>a blog article</u>
+                </a>{" "}
+                and in the{" "}
+                <a href="https://lorentel.com/projects">
+                    <u>projects section</u>
+                </a>
+                .
+            </>
+        ),
+    },
+];
+
 export default function HomeHero() {
     return (
         <section className="">
@@ -26,29 +60,20 @@ export default function HomeHero() {
                     <FaPenAlt className="socials" />
                 </a>
             </div>
-            {/* straight line */}
 
             <div className="news-light news-dark news-text-dark news-text-light w-full pb-10">
                 <hr className="h-1 bottom-0 mt-16 mb-5 mx-auto opacity-0" />
 
-                <FaScroll className=" text-2xl mx-auto mt-15" />
-                <div className="flex flex-row justify-center items-center mx-auto gap-5">
-                    {/* news section */}
-                    {/* h1 */}
-                    <h1 className="text-3xl font-extrabold mt-2">News</h1>
+                <div className="flex items-center justify-center gap-x-3">
+                    <FaScroll className="text-3xl mt-1" />
+                    <h1 className="text-3xl font-extrabold">Highlights</h1>
                 </div>
-                <p className=" text-lg text-start mt-2 w-[900px] max-[1200px]:w-[700px] max-[960px]:w-[600px] max-[630px]:w-[450px] mx-auto">
-                    <b>June 2024 -</b> I have won the first prize award in the
-                    Cardiff University and Vietnam National University-Ho Chi
-                    Minh University of Technology Student Poster Competition on
-                    "AI, Smart Healthcare, and IoT" in 2024.
-                </p>
-                <p className="x text-lg text-start mt-2 w-[900px] max-[1200px]:w-[700px] max-[960px]:w-[600px] max-[630px]:w-[450px] mx-auto">
-                    <b>May 2024 -</b> My abstract on the preliminary results
-                    from my study on "Epileptic seizure detection with Tiny
-                    Machine Learning" has been accepted to the MobiUK 2024
-                    conference.
-                </p>
+                <h2 className="text-center text-2xl font-bold">. . .</h2>
+                {news.map((news) => (
+                    <p className="text-lg text-start mt-3 w-[900px] max-[1200px]:w-[700px] max-[960px]:w-[600px] max-[630px]:w-[450px] mx-auto">
+                        <b className="text-primary">{news.date}</b> {news.text}
+                    </p>
+                ))}
             </div>
         </section>
     );
