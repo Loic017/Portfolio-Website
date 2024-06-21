@@ -40,7 +40,7 @@ const news = [
 export default function HomeHero() {
     return (
         <section className="">
-            <div className="mt-24 max-[840px]:mt-2 w-full flex flex-col mx-auto text-center">
+            <div className="mt-28 max-[840px]:mt-2 w-full flex flex-col mx-auto text-center">
                 <div className="home-design-dark home-design-light"></div>
                 <div className="mt-14 max-[840px]:mt-1">
                     <h1 className="home-header text-text text-5xl font-extrabold max-[640px]:text-center max-[640px]:mx-auto">
@@ -62,7 +62,7 @@ export default function HomeHero() {
             </div>
 
             <div className="news-light news-dark news-text-dark news-text-light w-full pb-10">
-                <hr className="h-1 bottom-0 mt-16 mb-5 mx-auto opacity-0" />
+                <hr className="h-1 bottom-0 mt-10 mb-5 mx-auto opacity-0" />
 
                 <div className="flex items-center justify-center gap-x-3">
                     <FaScroll className="text-3xl mt-1" />

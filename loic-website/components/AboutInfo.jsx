@@ -28,16 +28,17 @@ export default function AboutInfo() {
                         affinity for creating has brought me on a path of
                         learning and programming. Over the past few years I have
                         delved down many rabbit holes, improving my knowledge
-                        and skills along the way.
+                        and skills along the way in various areas.
                     </p>
-                    <p className="about-width">
-                        While having experience developing various systems from
-                        web applications to software development, I have an
-                        interest in researching and developing machine learning
-                        solutions that can be used to improve and benefit
-                        society. I hope that my work can be used to help others
-                        and eventually make a positive impact on the world.
+                    <p className="mb-2 about-width">
+                        While I have experience with different systems from web
+                        applications to software development, I have an interest
+                        in researching and developing machine learning solutions
+                        for the improvement of lives. I hope that my work can be
+                        used to help others and eventually make a positive
+                        impact on the world.
                     </p>
+                    <p className="about-width">. . .</p>
 
                     <div className="flex flex-row justify-center items-center mx-auto gap-5 my-5">
                         <a href="https://github.com/Loic017">
@@ -56,9 +57,8 @@ export default function AboutInfo() {
                             Technologies
                         </h1>
                         <p className="mb-2 about-width">
-                            I have experience working with a variety of
-                            technologies for different purposes and projects.
-                            This is including but not limited to:
+                            I have experience with different languages and
+                            technologies. This includes but is not limited to:
                         </p>
                         <p className="about-width">
                             <b className="text-primary">Languages:</b> Python,

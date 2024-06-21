@@ -110,11 +110,15 @@ export default function Projects() {
     return (
         <section className="grid gap-2 mt-5 mb-5">
             <h1 className="skills-headings text-center text-3xl">My Work</h1>
-            <p className="skills-headings text-center text-md max-[710px]:w-96 w-96 mx-auto">
+            <p className="skills-headings text-center text-md max-[710px]:w-96 min-[710px]:w-[800px] mx-auto">
                 This is a collection of projects I have developed and/or been a
                 part of. This includes research work alongside other personal
-                projects. For more information on each piece of work, follow the
-                attached links.
+                projects. A complete collection and smaller projects can be
+                found on my GitHub.
+            </p>
+            <p className="skills-headings text-center text-md max-[710px]:w-96 min-[710px]:w-[800px] mx-auto">
+                For more information on each piece of work, follow the attached
+                links.
             </p>
             <hr className="bg-background h-1 mt-5 mb-5 rounded" />
             <h2 className="skills-headings text-center text-2xl">
