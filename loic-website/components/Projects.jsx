@@ -110,7 +110,7 @@ export default function Projects() {
     return (
         <section className="grid gap-2 mt-5 mb-5">
             <h1 className="skills-headings text-center text-3xl">My Work</h1>
-            <p className="skills-headings text-center text-md w-[550px] mx-auto">
+            <p className="skills-headings text-center text-md max-[710px]:w-96 w-96 mx-auto">
                 This is a collection of projects I have developed and/or been a
                 part of. This includes research work alongside other personal
                 projects. For more information on each piece of work, follow the
@@ -132,7 +132,7 @@ export default function Projects() {
                 Other Personal Projects
             </h2>
             <div className="grid gap-4">
-                <div className="grid min-[1100px]:grid-cols-2 md:gap-x-10 mx-auto">
+                <div className="grid max-[1350px]:grid-cols-1 min-[1350px]:grid-cols-2 md:gap-x-10 mx-auto">
                     {projects.map((project, index) => (
                         <ProjectComponent2 key={index} {...project} />
                     ))}
@@ -147,7 +147,7 @@ function ProjectComponent(props) {
 
     return (
         <div className="flex-col">
-            <div className="m-5 transition-all project-dark h-72 md:h-60 mx-auto w-96 rounded-md md:text-text shadow-md bg-secondary overflow-hidden md:w-[1100px] md:flex">
+            <div className="m-5 transition-all project-dark max-[748px]:w-96 max-[1100px]:h-[500px] max-[1350px]:h-[300px] min-[1350px]:h-60 mx-auto w-[800px] max-[1100px]:w-[600px] min-[1350px]:w-[1100px] rounded-md md:text-text shadow-md bg-secondary overflow-hidden md:flex">
                 <div className="relative">
                     <Image
                         className="h-32 w-full md:h-full md:w-80 object-cover backdrop-blur-sm"
@@ -206,7 +206,7 @@ function ProjectComponent2(props) {
 
     return (
         <div className="flex-col">
-            <div className="m-5 transition-all project-dark h-72 md:h-60 mx-auto w-56 rounded-md md:text-text shadow-md bg-secondary overflow-hidden md:w-[600px] md:flex">
+            <div className="m-5 transition-all project-dark h-80 md:h-60 mx-auto w-96 rounded-md md:text-text shadow-md bg-secondary overflow-hidden md:w-[600px] md:flex">
                 <div className="relative">
                     <Image
                         className="h-32 w-full md:h-full md:w-64 object-cover backdrop-blur-sm"
