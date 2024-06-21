@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
             </head>
             <body className="bg-background font-carme">
                 <Providers>
-                    <div class="scale-0 fixed md:scale-100 md:bottom-3 md:right-3 rounded-lg overflow-hidden">
+                    <div class="scale-0 fixed min-[840px]:scale-100 min-[840px]:bottom-3 min-[840px]:right-3 rounded-lg overflow-hidden">
                         <Link href="/">
                             <Image
                                 src={logo}
@@ -33,8 +33,8 @@ export default function RootLayout({ children }) {
                             />
                         </Link>
                     </div>
+                    <div className="max-[840px]:mb-12">{children}</div>
                     <Navbar />
-                    {children}
                     <Analytics />
                 </Providers>
             </body>

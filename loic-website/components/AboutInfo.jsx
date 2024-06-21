@@ -2,24 +2,27 @@ import React from "react";
 
 import Image from "next/image";
 
+import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { FaPenAlt, FaCodepen, FaScroll } from "react-icons/fa";
+
 import underconstruction from "../app/images/under-construction-warning-sign-vector.jpg";
 import backdrop1 from "../app/images/backdrop1.jpg";
 
 export default function AboutInfo() {
     return (
         <section className="">
-            <div className="w-full h-44 bg-accent relative">
+            <div className="w-full h-32">
                 <Image
-                    className="h-full w-full md:h-full md:w-full object-cover backdrop-blur-sm object-top"
+                    className="h-full about-width md:h-full object-cover object-top backdrop-blur-sm"
                     src={backdrop1}
                 />
             </div>
-            <div className="md:w-[900px] w-390px skills-text info-back overflow-hidden md:text-left text-center w-full mx-auto text-text rounded-sm flex flex-col md:gap-2">
-                <div className="text-left">
-                    <h1 className="text-3xl font-bold mb-5 mt-10 text-center">
+            <div className="md:w-full w-390px info-back overflow-hidden md:text-left text-center mx-auto text-text rounded-sm flex flex-col md:gap-2">
+                <div className="text-left mb-3">
+                    <h1 className="text-3xl font-bold mb-2 mt-10 text-center">
                         Hello there! Im Loic,
                     </h1>
-                    <p className="mb-2">
+                    <p className="mb-2 about-width">
                         I am a graduating Computer Science student at Cardiff
                         University. My enthusiasm for problem-solving and my
                         affinity for creating has brought me on a path of
@@ -27,7 +30,7 @@ export default function AboutInfo() {
                         delved down many rabbit holes, improving my knowledge
                         and skills along the way.
                     </p>
-                    <p className="">
+                    <p className="about-width">
                         While having experience developing various systems from
                         web applications to software development, I have an
                         interest in researching and developing machine learning
@@ -35,99 +38,111 @@ export default function AboutInfo() {
                         society. I hope that my work can be used to help others
                         and eventually make a positive impact on the world.
                     </p>
-                    <hr className="bg-background h-1 my-10 rounded" />
-                    <div className="about-mini-section">
-                        <h1 className="text-3xl font-bold mb-5 mt-10 text-center">
-                            Publications
-                        </h1>
-                        <div className="publication-item">
-                            <p>
-                                <b className="text-primary">2024 </b>
-                                <b>
-                                    Epileptic seizure detection with Tiny
-                                    Machine Learning
-                                </b>
-                            </p>
-                            <p>Loic Lorente Lemoine, Nhat Pham MobiUK 2024</p>
-                            <p>
-                                <b>MobiUK 2024</b> - Sixth UK Mobile, Wearable
-                                and Ubiquitous Systems Research Symposium.
-                            </p>
-                        </div>
+
+                    <div className="flex flex-row justify-center items-center mx-auto gap-5 my-5">
+                        <a href="https://github.com/Loic017">
+                            <BsGithub className="socials" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/lemoineloic/">
+                            <BsLinkedin className="socials" />
+                        </a>
+                        <a href="https://blog.lorentel.com">
+                            <FaPenAlt className="socials" />
+                        </a>
                     </div>
+
                     <div className="about-mini-section">
-                        <h1 className="text-3xl font-bold mb-5 mt-10 text-center">
-                            Awards
-                        </h1>
-                        <div className="award-item">
-                            <p>
-                                <b className="text-primary">2024 </b>
-                                <b>
-                                    First Prize, Student Poster Competition on
-                                    “AI, Smart Healthcare, and IoT”
-                                </b>
-                            </p>
-                            <p>
-                                Cardiff University and Vietnam National
-                                University- Ho Chi Minh University of Technology
-                            </p>
-                        </div>
-                    </div>
-                    <hr className="bg-background h-1 my-10 rounded" />
-                    <div className="about-mini-section">
-                        <h1 className="text-3xl font-bold mb-5 mt-10 text-center">
+                        <h1 className="text-3xl font-bold mb-2 mt-5 about-width">
                             Technologies
                         </h1>
-                        <p className="mb-2">
+                        <p className="mb-2 about-width">
                             I have experience working with a variety of
                             technologies for different purposes and projects.
                             This is including but not limited to:
                         </p>
-                        <p>
+                        <p className="about-width">
                             <b className="text-primary">Languages:</b> Python,
                             Java, HTML, CSS, JavaScript, MATLAB
                         </p>
-                        <p>
+                        <p className="about-width">
                             <b className="text-primary">
                                 Frameworks and Libraries:
                             </b>{" "}
                             PyTorch, Django, React, Tailwind, Bootstrap
                         </p>
                     </div>
+                    <div className="about-mini-section">
+                        <h1 className="text-3xl font-bold mb-2 mt-10 about-width">
+                            Links and Contact
+                        </h1>
+                        <p className="mb-2 about-width">
+                            • I can be contacted via email at{" "}
+                            <u>[email here soon]</u> or messaged on{" "}
+                            <a href="https://www.linkedin.com/in/lemoineloic">
+                                <u>LinkedIn</u>
+                            </a>
+                            .
+                        </p>
+                        <p className="mb-2 about-width">
+                            • View posts on various projects or other topics on
+                            my{" "}
+                            <a href="https://blog.lorentel.com/">
+                                <u>Hashnode</u>
+                            </a>
+                            .
+                        </p>
+                        <p className="mb-2 about-width">
+                            • Check out some of my work and projects on my{" "}
+                            <a href="https://github.com/Loic017">
+                                <u>GitHub</u>
+                            </a>
+                            .
+                        </p>
+                    </div>
                 </div>
-                <hr className="bg-background h-1 mt-5 mb-5 rounded" />
 
-                <div className="text-center">
-                    <h1 className="text-sm font-bold mb-1 mt-5">
-                        Bare with me as I update this page.
-                    </h1>
-                    <Image
-                        className="md:h-full w-full h-auto md:w-40 object-cover backdrop-blur-sm m-auto mt-1"
-                        src={underconstruction}
-                        width={500}
-                        height={500}
-                    />
+                <div className="news-light news-dark news-text-dark news-text-light py-6">
+                    <div className="about-mini-section">
+                        <h1 className="text-3xl font-bold mb-2 about-width">
+                            Publications
+                        </h1>
+                        <div className="publication-item">
+                            <p className="about-width">
+                                <b className="text-primary">2024 </b>
+                                <b>
+                                    Epileptic seizure detection with Tiny
+                                    Machine Learning
+                                </b>
+                            </p>
+                            <p className="about-width">
+                                Loic Lorente Lemoine, Nhat Pham MobiUK 2024
+                            </p>
+                            <p className="about-width">
+                                <b>MobiUK 2024</b> - Sixth UK Mobile, Wearable
+                                and Ubiquitous Systems Research Symposium.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="about-mini-section">
+                        <h1 className="text-3xl font-bold mb-2 mt-10 about-width">
+                            Awards
+                        </h1>
+                        <div className="award-item">
+                            <p className="about-width">
+                                <b className="text-primary">2024 </b>
+                                <b>
+                                    First Prize, Student Poster Competition on
+                                    “AI, Smart Healthcare, and IoT”
+                                </b>
+                            </p>
+                            <p className="about-width">
+                                Cardiff University and Vietnam National
+                                University- Ho Chi Minh University of Technology
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     );
 }
-
-// Original
-// export default function AboutInfo() {
-//     return (
-//         <section className="mt-14 flex flex-col items-center w-[900px] mb-5 m-auto bg-gradient-to-b from-primary/40 to-transparent p-5 rounded-lg shadow-lg">
-//             <h1 className="text-3xl font-bold mb-5">About Me</h1>
-//             <div className="flex gap-7">
-//                 <div className="skills"></div>
-//                 <p>
-//                     A 3rd year undergraduate at Cardiff University with a
-//                     passion for Lorem ipsum dolor sit amet, consectetur
-//                     adipisicing elit. Cupiditate sint quasi sed rem dolore
-//                     soluta, nulla culpa repellendus placeat quia ex corrupti.
-//                     Molestias, saepe quae quis minus a numquam iste.
-//                 </p>
-//             </div>
-//         </section>
-//     );
-// }
