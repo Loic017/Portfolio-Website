@@ -20,11 +20,9 @@ const projects = [
     },
     {
         index: 1,
-        title: "Cardiff University",
-        role: "BSc Computer Science - [Final Grade Soon]",
-        tools: [
-            "Artificial Intelligence, Computer Vision, Large-Scale Databases, Robotics, etc",
-        ],
+        title: "BSc Computer Science",
+        role: "First Class Honours",
+        tools: ["Cardiff University"],
         links: {
             Website: "https://example.com",
             Article: "https://example.com",

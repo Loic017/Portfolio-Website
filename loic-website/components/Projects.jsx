@@ -140,13 +140,13 @@ export default function Projects() {
                 </div>
             </div>
             <div className="bg-background/10 h-2 my-6 rounded"></div>
-            <div className="flex space-x-4">
-                <h2 className="skills-headings text-center text-2xl cursor-pointer mx-auto">
+            <div className="flex justify-center space-x-4">
+                <h2 className="skills-headings text-center text-2xl">
                     Other Personal Projects
                 </h2>
                 <button
                     onClick={toggleVisibility}
-                    className="bg-background text-text font-bold py-2 px-4 rounded cursor-pointer text-center mx-auto w-20 transition-all border"
+                    className="bg-background text-text font-bold py-2 px-4 rounded text-center w-20 transition-all border ml-auto"
                     style={{
                         backgroundColor: isVisible ? "#d3e2f8" : "#2d3748",
                         color: isVisible ? "#2d3748" : "#d3e2f8",

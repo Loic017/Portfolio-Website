@@ -5,6 +5,10 @@ import { FaPenAlt, FaCodepen, FaScroll } from "react-icons/fa";
 
 const news = [
     {
+        date: "July 2024",
+        text: "I have graduated from Cardiff University with a First Class Honours in BSc Computer Science.",
+    },
+    {
         date: "June 2024",
         text: "I have won the first prize award in the Cardiff University and VietnamNational University-Ho Chi Minh University of Technology Student Poster Competition on 'AI, Smart Healthcare, and' in 2024.",
     },
