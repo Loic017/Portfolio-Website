@@ -10,7 +10,7 @@ const news = [
     },
     {
         date: "May 2024",
-        text: "My abstract on the preliminary results from my study on 'Epileptic seizure detection with Tiny Machine Learning' has been accepted to the MobiUK 2024 conference.",
+        text: "My abstract on the preliminary results from my study on 'Epileptic seizure detection with Tiny Machine Learning' has been accepted to the MobiUK 2024 6th UK Mobile, Wearable and Ubiquitous Systems Research Symposium.",
     },
     {
         date: "May 2024",

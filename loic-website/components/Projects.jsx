@@ -1,3 +1,6 @@
+"use client";
+import { useState } from "react";
+
 import React from "react";
 import Image from "next/image";
 
@@ -107,6 +110,11 @@ const projects = [
 ];
 
 export default function Projects() {
+    const [isVisible, setIsVisible] = useState(true);
+
+    const toggleVisibility = () => {
+        setIsVisible(!isVisible);
+    };
     return (
         <section className="grid gap-2 mt-5 mb-5">
             <h1 className="skills-headings text-center text-3xl">My Work</h1>
@@ -120,7 +128,7 @@ export default function Projects() {
                 For more information on each piece of work, follow the attached
                 links.
             </p>
-            <hr className="bg-background h-1 mt-5 mb-5 rounded" />
+            <div className="bg-background/10 h-2 my-10 rounded"></div>
             <h2 className="skills-headings text-center text-2xl">
                 Research Projects
             </h2>
@@ -131,17 +139,32 @@ export default function Projects() {
                     ))}
                 </div>
             </div>
-            <hr className="bg-background h-1 mt-5 mb-5 rounded" />
-            <h2 className="skills-headings text-center text-2xl">
-                Other Personal Projects
-            </h2>
-            <div className="grid gap-4">
-                <div className="grid max-[1350px]:grid-cols-1 min-[1350px]:grid-cols-2 md:gap-x-10 mx-auto">
-                    {projects.map((project, index) => (
-                        <ProjectComponent2 key={index} {...project} />
-                    ))}
-                </div>
+            <div className="bg-background/10 h-2 my-6 rounded"></div>
+            <div className="flex space-x-4">
+                <h2 className="skills-headings text-center text-2xl cursor-pointer mx-auto">
+                    Other Personal Projects
+                </h2>
+                <button
+                    onClick={toggleVisibility}
+                    className="bg-background text-text font-bold py-2 px-4 rounded cursor-pointer text-center mx-auto w-20 transition-all border"
+                    style={{
+                        backgroundColor: isVisible ? "#d3e2f8" : "#2d3748",
+                        color: isVisible ? "#2d3748" : "#d3e2f8",
+                        borderColor: isVisible ? "#2d3748" : "#d3e2f8",
+                    }}
+                >
+                    {!isVisible ? "Hide" : "Show"}
+                </button>
             </div>
+            {!isVisible && (
+                <div className="grid gap-4">
+                    <div className="grid max-[1350px]:grid-cols-1 min-[1350px]:grid-cols-2 md:gap-x-10 mx-auto">
+                        {projects.map((project, index) => (
+                            <ProjectComponent2 key={index} {...project} />
+                        ))}
+                    </div>
+                </div>
+            )}
         </section>
     );
 }
