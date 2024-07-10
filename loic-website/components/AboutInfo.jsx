@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { FaPenAlt, FaCodepen, FaScroll } from "react-icons/fa";
+import { BsEnvelopePaperFill } from "react-icons/bs";
 
 import underconstruction from "../app/images/under-construction-warning-sign-vector.jpg";
 import backdrop1 from "../app/images/backdrop1.jpg";
@@ -24,31 +25,39 @@ export default function AboutInfo() {
                     </h1>
                     <p className="mb-2 about-width">
                         I am a graduating Computer Science student at Cardiff
-                        University. My enthusiasm for problem-solving and my
-                        affinity for creating has brought me on a path of
-                        learning and programming. Over the past few years I have
-                        delved down many rabbit holes, improving my knowledge
-                        and skills along the way in various areas.
+                        University.
                     </p>
                     <p className="mb-2 about-width">
-                        While I have experience with different systems from web
+                        While I have experience with different systems, from web
                         applications to software development, I have an interest
-                        in researching and developing machine learning solutions
-                        for the improvement of lives. I hope that my work can be
-                        used to help others and eventually make a positive
-                        impact on the world.
+                        in researching and developing machine learning systems
+                        and applications.
+                    </p>
+                    <p className="mb-2 about-width">
+                        I hope that my work can be used to help others and
+                        eventually make a positive impact on the world.
                     </p>
                     <p className="about-width">. . .</p>
 
-                    <div className="flex flex-row justify-center items-center mx-auto gap-5 my-5">
-                        <a href="https://github.com/Loic017">
-                            <BsGithub className="socials" />
+                    <h2 className="text-xl font-bold about-width text-center mb-1">
+                        Links
+                    </h2>
+                    <div className="flex flex-row justify-center items-center mx-auto gap-5 mb-5 text-center">
+                        <a className="" href="https://github.com/Loic017">
+                            Github
+                            <BsGithub className="socials mx-auto" />
                         </a>
                         <a href="https://www.linkedin.com/in/lemoineloic/">
-                            <BsLinkedin className="socials" />
+                            LinkedIn
+                            <BsLinkedin className="socials mx-auto" />
                         </a>
                         <a href="https://blog.lorentel.com">
-                            <FaPenAlt className="socials" />
+                            Hashnode
+                            <FaPenAlt className="socials mx-auto" />
+                        </a>
+                        <a href="https://www.lorentel.com/about">
+                            Resume
+                            <BsEnvelopePaperFill className="socials mx-auto" />
                         </a>
                     </div>
 
@@ -58,7 +67,8 @@ export default function AboutInfo() {
                         </h1>
                         <p className="mb-2 about-width">
                             I have experience with different languages and
-                            technologies. This includes but is not limited to:
+                            technologies. In no particular order, this includes
+                            but is not limited to:
                         </p>
                         <p className="about-width">
                             <b className="text-primary">Languages:</b> Python,
@@ -68,7 +78,10 @@ export default function AboutInfo() {
                             <b className="text-primary">
                                 Frameworks and Libraries:
                             </b>{" "}
-                            PyTorch, Django, React, Tailwind, Bootstrap
+                            PyTorch, Django, React, Next.js, Tailwind
+                        </p>
+                        <p className="about-width">
+                            <b className="text-primary">Hardware:</b> Arduino
                         </p>
                     </div>
                     <div className="about-mini-section">
@@ -77,7 +90,7 @@ export default function AboutInfo() {
                         </h1>
                         <p className="mb-2 about-width">
                             • I can be contacted via email at{" "}
-                            <u>[email here soon]</u> or messaged on{" "}
+                            <i>"reachloic@gmail.com"</i> or messaged on{" "}
                             <a href="https://www.linkedin.com/in/lemoineloic">
                                 <u>LinkedIn</u>
                             </a>
