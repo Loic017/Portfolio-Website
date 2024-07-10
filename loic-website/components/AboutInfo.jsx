@@ -90,7 +90,8 @@ export default function AboutInfo() {
                         </h1>
                         <p className="mb-2 about-width">
                             • I can be contacted via email at{" "}
-                            <i>"reachloic@gmail.com"</i> or messaged on{" "}
+                            <i>&quot;reachloic@gmail.com&quot;</i> or messaged
+                            on{" "}
                             <a href="https://www.linkedin.com/in/lemoineloic">
                                 <u>LinkedIn</u>
                             </a>
