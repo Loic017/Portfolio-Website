@@ -44,20 +44,20 @@ export default function AboutInfo() {
                     </h2>
                     <div className="flex flex-row justify-center items-center mx-auto gap-5 mb-5 text-center">
                         <a className="" href="https://github.com/Loic017">
-                            Github
                             <BsGithub className="socials mx-auto" />
+                            Github
                         </a>
                         <a href="https://www.linkedin.com/in/lemoineloic/">
-                            LinkedIn
                             <BsLinkedin className="socials mx-auto" />
+                            LinkedIn
                         </a>
                         <a href="https://blog.lorentel.com">
-                            Hashnode
                             <FaPenAlt className="socials mx-auto" />
+                            Hashnode
                         </a>
                         <a href="https://www.lorentel.com/about">
-                            Resume
                             <BsEnvelopePaperFill className="socials mx-auto" />
+                            Resume
                         </a>
                     </div>
 
