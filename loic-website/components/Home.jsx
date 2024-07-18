@@ -6,34 +6,65 @@ import { FaPenAlt, FaCodepen, FaScroll } from "react-icons/fa";
 const news = [
     {
         date: "July 2024",
-        text: "I have graduated from Cardiff University with a First Class Honours in BSc Computer Science.",
+        text: (
+            <>
+                I have been awarded the{" "}
+                <c className="text-primary">
+                    "Best Final Year Project, BSc Computer Science and Variants"
+                </c>{" "}
+                prize from the School of Computer Science and Informatics at
+                Cardiff University for my study on{" "}
+                <a
+                    href="https://blog.lorentel.com/tinyml-seizure-detection"
+                    className="underline italic"
+                >
+                    TinyML for Epileptic Seizures.
+                </a>
+            </>
+        ),
+    },
+    {
+        date: "July 2024",
+        text: (
+            <>
+                I have graduated from Cardiff University with{" "}
+                <c className="text-primary">First Class Honours</c> in BSc
+                Computer Science.
+            </>
+        ),
     },
     {
         date: "June 2024",
-        text: "I have won the first prize award in the Cardiff University and VietnamNational University-Ho Chi Minh University of Technology Student Poster Competition on 'AI, Smart Healthcare, and' in 2024.",
-    },
-    {
-        date: "May 2024",
-        text: "My abstract on the preliminary results from my study on 'Epileptic seizure detection with Tiny Machine Learning' has been accepted to the MobiUK 2024 6th UK Mobile, Wearable and Ubiquitous Systems Research Symposium.",
+        text: (
+            <>
+                I have won <c className="text-primary">first prize</c> in the{" "}
+                <a
+                    href="https://www.agilecps.org/activities/2024-cardiff-vnu-competition"
+                    className="underline italic"
+                >
+                    Global Wales' Cardiff-VNU student poster competition
+                </a>{" "}
+                on "AI, Smart Healthcare, and IoT" in 2024.
+            </>
+        ),
     },
     {
         date: "May 2024",
         text: (
             <>
-                I have submitted my BSc Computer Science dissertation
-                &apos;Design a tiny machine learning model to detect epileptic
-                seizures on wearables&apos;. Information and results will be
-                available soon with available information displayed in{" "}
+                My extended abstract on{" "}
                 <a
-                    href="https://blog.lorentel.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="https://blog.lorentel.com/tinyml-seizure-detection"
+                    className="underline italic"
                 >
-                    <u>a blog article</u>
+                    'Epileptic seizure detection with Tiny Machine Learning'
                 </a>{" "}
-                and in the{" "}
-                <a href="https://lorentel.com/projects">
-                    <u>projects section</u>
+                has been accepted to the{" "}
+                <a
+                    href="https://www.mobiuk.org/2024/programme.html"
+                    className="underline italic"
+                >
+                    MobiUK 2024 Symposium
                 </a>
                 .
             </>
@@ -74,13 +105,15 @@ export default function HomeHero() {
                 </div>
                 <h2 className="text-center text-2xl font-bold">. . .</h2>
                 {news.map((newsItem, index) => (
-                    <p
+                    <div
                         key={index}
-                        className="text-lg text-start mt-3 w-[900px] max-[1200px]:w-[700px] max-[960px]:w-[600px] max-[630px]:w-[450px] max-[470px]:w-[300px] mx-auto"
+                        className="text-lg text-start my-4 w-[1000px] max-[1200px]:w-[700px] max-[960px]:w-[600px] max-[630px]:w-[450px] max-[470px]:w-[300px] mx-auto"
                     >
-                        <b className="text-primary">{newsItem.date}</b>{" "}
-                        {newsItem.text}
-                    </p>
+                        <p>
+                            <b className="text-primary w-10">{newsItem.date}</b>{" "}
+                        </p>
+                        <p className="">{newsItem.text}</p>
+                    </div>
                 ))}
             </div>
         </section>

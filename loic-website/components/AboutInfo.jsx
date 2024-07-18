@@ -141,9 +141,19 @@ export default function AboutInfo() {
                         <h1 className="text-3xl font-bold mb-2 mt-10 about-width">
                             Awards
                         </h1>
-                        <div className="award-item">
+                        <div className="award-item my-3">
                             <p className="about-width">
-                                <b className="text-primary">2024 </b>
+                                <b className="text-primary">July 2024 </b>
+                                <b>
+                                    Best Final Year Project, BSc Computer
+                                    Science and Variants
+                                </b>
+                            </p>
+                            <p className="about-width">Cardiff University</p>
+                        </div>
+                        <div className="award-item my-3">
+                            <p className="about-width">
+                                <b className="text-primary">June 2024 </b>
                                 <b>
                                     First Prize, Student Poster Competition on
                                     “AI, Smart Healthcare, and IoT”
