@@ -20,7 +20,7 @@ export default function AboutInfo() {
             </div>
             <div className="md:w-full w-390px info-back overflow-hidden md:text-left text-center mx-auto text-text rounded-sm flex flex-col md:gap-2">
                 <div className="text-left mb-3">
-                    <h1 className="text-3xl font-bold mb-2 mt-10 text-center">
+                    <h1 className="text-3xl font-bold mb-4 mt-10 text-center">
                         Hello there! Im Loic,
                     </h1>
                     <p className="mb-2 about-width">

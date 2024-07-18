@@ -137,7 +137,7 @@
 }
 
 [data-theme="dark"] .project-dark {
-    @apply bg-secondary/10 text-white;
+    @apply bg-secondary/0 text-white;
 }
 
 [data-theme="dark"] .desc-dark {
@@ -146,6 +146,14 @@
 
 [data-theme="dark"] .project-links {
     @apply bg-secondary text-text hover:bg-text hover:text-secondary;
+}
+
+.project-links-2 {
+    @apply bg-secondary shadow-md rounded-md px-3 py-2 text-sm transition-all text-text hover:border-2 border-2 border-secondary  hover:bg-text hover:text-secondary md:bg-text md:text-secondary md:hover:bg-secondary md:hover:text-text;
+}
+
+[data-theme="dark"] .project-links-2 {
+    @apply bg-secondary text-text hover:bg-text hover:text-secondary w-52 h-10 text-center mx-auto;
 }
 
 /* Change the scrollbar width */

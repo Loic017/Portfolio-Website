@@ -4,6 +4,8 @@ import { useState } from "react";
 import React from "react";
 import Image from "next/image";
 
+import backdrop1 from "../app/images/backdrop1.jpg";
+
 import postit from "../app/images/postit.png";
 import fmimporter from "../app/images/fmimporter.png";
 import toolgether from "../app/images/toolgether.png";
@@ -20,8 +22,18 @@ const research = [
     {
         index: 0,
         title: "Epileptic seizure detection with Tiny Machine Learning",
-        description:
-            "A study exploring the development and implementation of efficient Tiny Machine Learning for the detection of epileptic seizures on an Arduino Platform. Supervised by Nhat Pham for my BSc Computer Science Dissertation 'Design a tiny machine learning model to detect epileptic seizures on wearables'.",
+        description: (
+            <div>
+                A study exploring the development and implementation of
+                efficient Tiny Machine Learning models for the detection of
+                epileptic seizures on an Arduino Platform.
+                <div style={{ marginTop: "0.5em" }}>
+                    Supervised by Nhat Pham for my BSc Computer Science
+                    Dissertation &apos;Design a tiny machine learning model to
+                    detect epileptic seizures on wearables&apos;.
+                </div>
+            </div>
+        ),
         tools: [
             "Tiny Machine Learning",
             "PyTorch",
@@ -30,8 +42,8 @@ const research = [
             "Arduino",
         ],
         links: {
-            Information: "https://blog.lorentel.com/tinyml-seizure-detection",
-            Repository:
+            More_Info: "https://blog.lorentel.com/tinyml-seizure-detection",
+            Github_Repo:
                 "https://github.com/Loic017/Epileptic-seizure-detection-with-Tiny-Machine-Learning",
         },
         image: devices,
@@ -116,7 +128,13 @@ export default function Projects() {
         setIsVisible(!isVisible);
     };
     return (
-        <section className="grid gap-2 mt-5 mb-5">
+        <section className="grid gap-2 mb-5">
+            <div className="w-full h-32 mb-5">
+                <Image
+                    className="h-full about-width md:h-full object-cover object-top backdrop-blur-sm"
+                    src={backdrop1}
+                />
+            </div>
             <h1 className="skills-headings text-center text-3xl">My Work</h1>
             <p className="skills-headings text-center text-md max-[710px]:w-96 min-[710px]:w-[800px] mx-auto">
                 This is a collection of projects I have developed and/or been a
@@ -128,8 +146,8 @@ export default function Projects() {
                 For more information on each piece of work, follow the attached
                 links.
             </p>
-            <div className="bg-background/10 h-2 my-10 rounded"></div>
-            <h2 className="skills-headings text-center text-2xl">
+            {/* <div className="bg-background/10 h-2 my-6 rounded-sm w-[1000px] mx-auto"></div> */}
+            <h2 className="skills-headings text-2xl mt-5 about-width">
                 Research Projects
             </h2>
             <div className="grid gap-4">
@@ -139,23 +157,21 @@ export default function Projects() {
                     ))}
                 </div>
             </div>
-            <div className="bg-background/10 h-2 my-6 rounded"></div>
-            <div className="flex justify-center space-x-4">
-                <h2 className="skills-headings text-center text-2xl">
-                    Other Personal Projects
-                </h2>
-                <button
-                    onClick={toggleVisibility}
-                    className="bg-background text-text font-bold py-2 px-4 rounded text-center w-20 transition-all border ml-auto"
-                    style={{
-                        backgroundColor: isVisible ? "#d3e2f8" : "#2d3748",
-                        color: isVisible ? "#2d3748" : "#d3e2f8",
-                        borderColor: isVisible ? "#2d3748" : "#d3e2f8",
-                    }}
-                >
-                    {!isVisible ? "Hide" : "Show"}
-                </button>
-            </div>
+            {/* <div className="bg-background/10 h-2 my-6 rounded-sm w-[1000px] mx-auto"></div> */}
+            <h2 className="skills-headings text-2xl mb-2 about-width">
+                Other Projects
+            </h2>
+            <button
+                onClick={toggleVisibility}
+                className="bg-background text-text font-bold py-2 px-4 rounded text-center w-20 transition-all border mx-auto"
+                style={{
+                    backgroundColor: isVisible ? "#d3e2f8" : "#2d3748",
+                    color: isVisible ? "#2d3748" : "#d3e2f8",
+                    borderColor: isVisible ? "#2d3748" : "#d3e2f8",
+                }}
+            >
+                {!isVisible ? "Hide" : "Show"}
+            </button>
             {!isVisible && (
                 <div className="grid gap-4">
                     <div className="grid max-[1350px]:grid-cols-1 min-[1350px]:grid-cols-2 md:gap-x-10 mx-auto">
@@ -174,10 +190,10 @@ function ProjectComponent(props) {
 
     return (
         <div className="flex-col">
-            <div className="m-5 transition-all project-dark max-[748px]:w-96 max-[1100px]:h-[500px] max-[1350px]:h-[300px] min-[1350px]:h-60 mx-auto w-[800px] max-[1100px]:w-[600px] min-[1350px]:w-[1100px] rounded-md md:text-text shadow-md bg-secondary overflow-hidden md:flex">
+            <div className="m-5 transition-all project-dark rounded-md max-[748px]:w-96 max-[1100px]:h-[500px] max-[1350px]:h-[300px] min-[1350px]:h-96 mx-auto w-[800px] max-[1100px]:w-[600px] min-[1350px]:w-[900px] rounded-r-2xl md:text-text shadow-md bg-secondary overflow-hidden md:flex">
                 <div className="relative">
                     <Image
-                        className="h-32 w-full md:h-full md:w-80 object-cover backdrop-blur-sm"
+                        className="h-32 w-full md:h-full md:w-[500px] object-cover backdrop-blur-sm"
                         src={image}
                         width={500}
                         height={500}
@@ -195,28 +211,32 @@ function ProjectComponent(props) {
                         ))}
                     </div>
                 </div>
-                <div className="p-3 pl-5 pr-5 md:w-full md:h-60 md:p-7 md:py-5 md:flex md:flex-col md:justify-between">
-                    <div className="flex gap-3 md:gap-5 opacity-40">
-                        {tools.map((tool, index) => (
-                            <p
-                                key={index}
-                                className="text-[13.5px] font-semibold"
-                            >
-                                {tool}
+                <div className="p-3 pl-5 pr-5 md:w-full md:h-96 md:p-7 md:py-5 md:flex md:flex-col justify-between">
+                    <div className="md:flex md:flex-col md:gap-2">
+                        <div className="uppercase tracking-wide text-2xl font-bold mt-1">
+                            {title}
+                        </div>
+                        <div className="flex gap-2 md:gap-2 opacity-40">
+                            <p className="text-[13.5px] font-semibold">
+                                Key Features:
                             </p>
-                        ))}
+                            {tools.map((tool, index) => (
+                                <p key={index} className="text-[13.5px]">
+                                    {tool}
+                                </p>
+                            ))}
+                        </div>
+                        <p className="mt-1 text-[15px] desc-dark">
+                            {description}
+                        </p>
                     </div>
-                    <div className="uppercase tracking-wide text-2xl font-bold mt-1">
-                        {title}
-                    </div>
-                    <p className="mt-1 text-[15px] desc-dark ">{description}</p>
-                    <div className="hidden md:flex gap-2 mt-3 items-center self-end">
-                        <BsLink45Deg />
+                    <div className="hidden md:flex gap-3 mt-3 items-center self-end">
+                        <BsLink45Deg className="text-2xl" />
                         {Object.entries(links).map(([name, url], index) => (
                             <a
                                 key={index}
                                 href={url}
-                                className="project-links font-semibold flex items-center"
+                                className="project-links-2 font-bold flex items-center"
                             >
                                 {name}
                             </a>
@@ -275,7 +295,7 @@ function ProjectComponent2(props) {
                             <a
                                 key={index}
                                 href={url}
-                                className="project-links font-semibold flex items-center"
+                                className="project-links font-semibold text-center"
                             >
                                 {name}
                             </a>
