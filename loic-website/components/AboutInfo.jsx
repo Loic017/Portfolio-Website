@@ -160,8 +160,9 @@ export default function AboutInfo() {
                                 </b>
                             </p>
                             <p className="about-width">
-                                Cardiff University and Vietnam National
-                                University- Ho Chi Minh University of Technology
+                                Global Wales, Cardiff University and Vietnam
+                                National University - Ho Chi Minh University of
+                                Technology
                             </p>
                         </div>
                     </div>

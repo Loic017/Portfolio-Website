@@ -10,7 +10,8 @@ const news = [
             <>
                 I have been awarded the{" "}
                 <c className="text-primary">
-                    "Best Final Year Project, BSc Computer Science and Variants"
+                    &quot;Best Final Year Project, BSc Computer Science and
+                    Variants&quot;
                 </c>{" "}
                 prize from the School of Computer Science and Informatics at
                 Cardiff University for my study on{" "}
