@@ -42,9 +42,9 @@ const news = [
                     href="https://www.agilecps.org/activities/2024-cardiff-vnu-competition"
                     className="underline italic"
                 >
-                    Global Wales' Cardiff-VNU student poster competition
+                    Global Wales&apos; Cardiff-VNU student poster competition
                 </a>{" "}
-                on "AI, Smart Healthcare, and IoT" in 2024.
+                on &quot;AI, Smart Healthcare, and IoT&quot; in 2024.
             </>
         ),
     },
@@ -57,7 +57,8 @@ const news = [
                     href="https://blog.lorentel.com/tinyml-seizure-detection"
                     className="underline italic"
                 >
-                    'Epileptic seizure detection with Tiny Machine Learning'
+                    &apos;Epileptic seizure detection with Tiny Machine
+                    Learning&apos;
                 </a>{" "}
                 has been accepted to the{" "}
                 <a
