@@ -136,17 +136,16 @@ export default function Projects() {
                 />
             </div>
             <h1 className="skills-headings text-center text-3xl">My Work</h1>
-            <p className="skills-headings text-center text-md max-[710px]:w-96 min-[710px]:w-[800px] mx-auto">
-                This is a collection of projects I have developed and/or been a
-                part of. This includes research work alongside other personal
-                projects. A complete collection and smaller projects can be
-                found on my GitHub.
+            <p className="pa-2 text-md max-[710px]:w-96 min-[710px]:w-[900px] mx-auto">
+                A collection of projects I have developed and/or been a part of.
+                This includes research work alongside other personal projects. A
+                complete collection alongside any smaller projects can be found
+                on my GitHub.
             </p>
-            <p className="skills-headings text-center text-md max-[710px]:w-96 min-[710px]:w-[800px] mx-auto">
+            <p className="pa-2 text-md max-[710px]:w-96 min-[710px]:w-[900px] mx-auto">
                 For more information on each piece of work, follow the attached
                 links.
             </p>
-            {/* <div className="bg-background/10 h-2 my-6 rounded-sm w-[1000px] mx-auto"></div> */}
             <h2 className="skills-headings text-2xl mt-5 about-width">
                 Research Projects
             </h2>
@@ -157,21 +156,27 @@ export default function Projects() {
                     ))}
                 </div>
             </div>
-            {/* <div className="bg-background/10 h-2 my-6 rounded-sm w-[1000px] mx-auto"></div> */}
-            <h2 className="skills-headings text-2xl mb-2 about-width">
+            <h2 className="skills-headings text-2xl about-width">
                 Other Projects
             </h2>
-            <button
-                onClick={toggleVisibility}
-                className="bg-background text-text font-bold py-2 px-4 rounded text-center w-20 transition-all border mx-auto"
-                style={{
-                    backgroundColor: isVisible ? "#d3e2f8" : "#2d3748",
-                    color: isVisible ? "#2d3748" : "#d3e2f8",
-                    borderColor: isVisible ? "#2d3748" : "#d3e2f8",
-                }}
-            >
-                {!isVisible ? "Hide" : "Show"}
-            </button>
+            <div className="flex flex-row min-[710px]:w-[900px] mx-auto">
+                <p className="pa-2 text-md max-[710px]:w-96 min-[710px]:w-[900px] mx-auto mb-2">
+                    Other more informal, personal or practice projectes I have
+                    worked on.
+                </p>
+                <button
+                    onClick={toggleVisibility}
+                    className="bg-background text-text font-bold py-2 px-4 rounded text-center w-20 transition-all border mx-auto"
+                    style={{
+                        backgroundColor: isVisible ? "#d3e2f8" : "#2d3748",
+                        color: isVisible ? "#2d3748" : "#d3e2f8",
+                        borderColor: isVisible ? "#2d3748" : "#d3e2f8",
+                    }}
+                >
+                    {!isVisible ? "Hide" : "Show"}
+                </button>
+            </div>
+
             {!isVisible && (
                 <div className="grid gap-4">
                     <div className="grid max-[1350px]:grid-cols-1 min-[1350px]:grid-cols-2 md:gap-x-10 mx-auto">
@@ -190,7 +195,7 @@ function ProjectComponent(props) {
 
     return (
         <div className="flex-col">
-            <div className="m-5 transition-all project-dark rounded-md max-[748px]:w-96 max-[1100px]:h-[500px] max-[1350px]:h-[300px] min-[1350px]:h-96 mx-auto w-[800px] max-[1100px]:w-[600px] min-[1350px]:w-[900px] rounded-r-2xl md:text-text shadow-md bg-secondary overflow-hidden md:flex">
+            <div className="m-5 transition-all project-dark rounded-md max-[748px]:w-96 max-[1100px]:h-[500px] max-[1350px]:h-[300px] min-[1350px]:h-96 mx-auto w-[800px] max-[1100px]:w-[600px] min-[1350px]:w-[900px] rounded-r-2xl md:text-text shadow-lg bg-secondary overflow-hidden md:flex">
                 <div className="relative">
                     <Image
                         className="h-32 w-full md:h-full md:w-[500px] object-cover backdrop-blur-sm"

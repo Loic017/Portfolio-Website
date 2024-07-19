@@ -112,6 +112,10 @@
     @apply font-semibold opacity-50;
 }
 
+.pa-2 {
+    @apply opacity-100;
+}
+
 [data-theme="dark"] .skills-headings {
     @apply font-semibold opacity-100 text-white;
 }

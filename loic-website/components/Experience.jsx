@@ -3,6 +3,8 @@ import Image from "next/image";
 
 import blacksquare from "../app/images/blacksquare.png";
 
+import backdrop1 from "../app/images/backdrop1.jpg";
+
 import cityofwestminstercollege from "../app/images/cityofwestminstercollege.png";
 
 const projects = [
@@ -11,6 +13,7 @@ const projects = [
         title: "???",
         role: "???",
         tools: ["???"],
+        info: <></>,
         links: {
             Website: "https://example.com",
             Article: "https://example.com",
@@ -23,6 +26,14 @@ const projects = [
         title: "BSc Computer Science",
         role: "First Class Honours",
         tools: ["Cardiff University"],
+        info: (
+            <>
+                <b>Dissertation:</b> Design tiny machine learning models to
+                detect epileptic seizures on wearables
+                <br />
+                <b>Awards:</b> Best Computer Science Final Year Project
+            </>
+        ),
         links: {
             Website: "https://example.com",
             Article: "https://example.com",
@@ -34,7 +45,13 @@ const projects = [
 
 export default function Experiences() {
     return (
-        <section className="grid gap-2 mt-5">
+        <section className="grid gap-2">
+            <div className="w-full h-32 mb-5">
+                <Image
+                    className="h-full about-width md:h-full object-cover object-top backdrop-blur-sm"
+                    src={backdrop1}
+                />
+            </div>
             <h1 className="skills-headings text-center text-3xl">Experience</h1>
             <p className="skills-headings text-center text-md">
                 A timeline of my education and work experience.
@@ -51,7 +68,7 @@ export default function Experiences() {
 }
 
 function ExperienceComponent(props) {
-    const { index, title, role, tools, links, image, dates } = props;
+    const { index, title, role, tools, info, links, image, dates } = props;
 
     return (
         <div>
@@ -63,11 +80,11 @@ function ExperienceComponent(props) {
                     </div>
                 </div>
             ) : null}
-            <div className="ml-2 mr-2 transition-all md:max-h-40 project-dark max-w-lg h-auto mx-auto w-72 md:w-[800px] rounded-md shadow-lg md:text-text bg-secondary overflow-hidden md:max-w-2xl">
+            <div className="ml-2 mr-2 transition-all md:h-52 project-dark h-auto mx-auto w-72 md:w-[900px] rounded-md shadow-lg md:text-text bg-secondary overflow-hidden">
                 <div className="flex md:flex-row flex-col">
                     <div className="relative">
                         <Image
-                            className="md:h-full w-full h-auto md:w-40 object-cover backdrop-blur-sm"
+                            className="w-full h-auto md:h-52 md:w-72 object-cover backdrop-blur-sm"
                             src={image}
                             width={500}
                             height={500}
@@ -85,22 +102,26 @@ function ExperienceComponent(props) {
                             ))}
                         </div> */}
                     </div>
-                    <div className="p-3 pl-5 pr-5 md:w-full project-content-dark">
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-3 md:flex md:gap-x-0 opacity-40">
-                            {tools.map((tool, index) => (
-                                <p
-                                    key={index}
-                                    className="text-sm font-semibold"
-                                >
-                                    {tool}
-                                </p>
-                            ))}
+                    <div className="pb-10 pt-3 pl-5 pr-3 md:w-full project-content-dark">
+                        <div className="grid grid-cols-1 gap-x-3 md:flex md:flex-col md:justify-between md:h-full">
+                            <div className="md:flex md:flex-col md:gap-2">
+                                <div className="flex flex-row justify-between items-center my-auto text-sm font-semibold opacity-80">
+                                    {tools.map((tool, index) => (
+                                        <p key={index} className="">
+                                            {tool}
+                                        </p>
+                                    ))}
+                                    <p className="desc-dark text-end">
+                                        {dates}
+                                    </p>
+                                </div>
+
+                                <div className=" tracking-wide text-md font-bold">
+                                    {title} - {role}
+                                </div>
+                                <p className="desc-dark">{info}</p>
+                            </div>
                         </div>
-                        <div className="uppercase tracking-wide text-md font-bold mt-1">
-                            {title}
-                        </div>
-                        <p className="mt-1 desc-dark">{role}</p>
-                        <p className="mt-1 desc-dark text-end">{dates}</p>
                     </div>
                 </div>
             </div>
