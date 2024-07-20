@@ -80,9 +80,9 @@ function ExperienceComponent(props) {
                     </div>
                 </div>
             ) : null}
-            <div className="ml-2 mr-2 transition-all md:h-52 project-dark h-auto mx-auto w-72 md:w-[900px] rounded-md shadow-lg md:text-text bg-secondary overflow-hidden">
-                <div className="flex md:flex-row flex-col">
-                    <div className="relative">
+            <div className="ml-2 mr-2 transition-all md:h-52 project-dark h-auto mx-auto w-72 md:w-[900px] rounded-md shadow-lg overflow-hidden">
+                <div className="flex md:flex-row flex-col mx-auto">
+                    <div className="relative ">
                         <Image
                             className="w-full h-auto md:h-52 md:w-72 object-cover backdrop-blur-sm"
                             src={image}

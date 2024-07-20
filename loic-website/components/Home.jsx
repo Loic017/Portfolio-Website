@@ -128,6 +128,10 @@ export default function HomeHero() {
                 <p className="text-center text-sm mt-10 opacity-40">
                     Last Updated: 20/07/2024
                 </p>
+                <p className="text-center text-sm opacity-40">
+                    This website is still in development and receives constant
+                    information and UI updates.
+                </p>
             </div>
         </section>
     );

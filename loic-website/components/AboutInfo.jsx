@@ -23,7 +23,7 @@ export default function AboutInfo() {
                 <div className="text-left mb-3">
                     <div className="min-[1000px]:flex-row flex-col about-width mt-10">
                         <Image
-                            className="mx-auto w-80 h-full rounded-l-md"
+                            className="mx-auto w-80 h-full min-[1000px]:rounded-l-md rounded-md"
                             src={frontpage}
                         />
                         <div className="w-auto pl-5 mt-5">
