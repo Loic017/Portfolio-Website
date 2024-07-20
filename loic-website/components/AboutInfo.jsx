@@ -21,7 +21,7 @@ export default function AboutInfo() {
             </div>
             <div className="md:w-full info-back overflow-hidden md:text-left text-center mx-auto text-text rounded-sm flex flex-col md:gap-2">
                 <div className="text-left mb-3">
-                    <div className="min-[1000px]:flex-row flex-col about-width mt-10">
+                    <div className="flex min-[1000px]:flex-row flex-col about-width mt-10">
                         <Image
                             className="mx-auto w-80 h-full min-[1000px]:rounded-l-md rounded-md"
                             src={frontpage}

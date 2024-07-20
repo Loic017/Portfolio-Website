@@ -71,7 +71,7 @@ export default function Navbar() {
                 >
                     <CgProfile />
                     <span className="sidebar-tooltip group-hover:scale-100">
-                        About Me
+                        About
                     </span>
                 </Link>
                 <Link
@@ -84,7 +84,7 @@ export default function Navbar() {
                 >
                     <BsProjector />
                     <span className="sidebar-tooltip group-hover:scale-100">
-                        My Work
+                        Projects
                     </span>
                 </Link>
                 <Link

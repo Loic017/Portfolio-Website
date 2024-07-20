@@ -132,19 +132,21 @@ export default function Projects() {
         setIsVisible(!isVisible);
     };
     return (
-        <section className="grid gap-2 mb-5">
+        <section className=" mb-5">
             <div className="w-full h-32 mb-5">
                 <Image
                     className="h-full about-width md:h-full object-cover object-top backdrop-blur-sm rounded-b-md"
                     src={backdrop1}
                 />
             </div>
-            <h1 className="skills-headings text-center text-3xl">My Work</h1>
-            <p className="pa-2 text-md max-[1200px]:w-96 min-[1200px]:w-[900px] mx-auto">
+            <h1 className="skills-headings text-center text-3xl mb-5">
+                Projects
+            </h1>
+            <p className="pa-2 text-md max-[1200px]:w-96 min-[1200px]:w-[900px] mx-auto mb-2">
                 A collection of projects I have developed and/or been a part of.
-                This includes research work alongside other personal projects. A
-                complete collection alongside any smaller projects can be found
-                on my GitHub.
+                This includes research work alongside other personal work. A
+                more complete collection alongside any smaller projects can be
+                found on my GitHub.
             </p>
             <p className="pa-2 text-md max-[1200px]:w-96 min-[1200px]:w-[900px] mx-auto">
                 For more information on each piece of work, follow the attached
