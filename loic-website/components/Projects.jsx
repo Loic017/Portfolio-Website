@@ -25,12 +25,16 @@ const research = [
         description: (
             <div>
                 A study exploring the development and implementation of
-                efficient Tiny Machine Learning models for the detection of
-                epileptic seizures on an Arduino Platform.
+                efficient <b>Tiny Machine Learning models</b> for the{" "}
+                <b>detection of epileptic seizures</b> on an Arduino Platform.
                 <div style={{ marginTop: "0.5em" }}>
                     Supervised by Nhat Pham for my BSc Computer Science
                     Dissertation &apos;Design a tiny machine learning model to
                     detect epileptic seizures on wearables&apos;.
+                </div>
+                <div style={{ marginTop: "0.5em" }}>
+                    This study was presented at the MobiUK 2024 Symposium and
+                    was awarded Best Computer Science Final Year Project.
                 </div>
             </div>
         ),
@@ -136,17 +140,17 @@ export default function Projects() {
                 />
             </div>
             <h1 className="skills-headings text-center text-3xl">My Work</h1>
-            <p className="pa-2 text-md max-[710px]:w-96 min-[710px]:w-[900px] mx-auto">
+            <p className="pa-2 text-md max-[1200px]:w-96 min-[1200px]:w-[900px] mx-auto">
                 A collection of projects I have developed and/or been a part of.
                 This includes research work alongside other personal projects. A
                 complete collection alongside any smaller projects can be found
                 on my GitHub.
             </p>
-            <p className="pa-2 text-md max-[710px]:w-96 min-[710px]:w-[900px] mx-auto">
+            <p className="pa-2 text-md max-[1200px]:w-96 min-[1200px]:w-[900px] mx-auto">
                 For more information on each piece of work, follow the attached
                 links.
             </p>
-            <h2 className="skills-headings text-2xl mt-5 about-width">
+            <h2 className="skills-headings text-2xl mt-5 max-[1200px]:text-center about-width">
                 Research Projects
             </h2>
             <div className="grid gap-4">
@@ -156,11 +160,11 @@ export default function Projects() {
                     ))}
                 </div>
             </div>
-            <h2 className="skills-headings text-2xl about-width">
+            <h2 className="skills-headings text-2xl max-[1200px]:text-center about-width mt-5">
                 Other Projects
             </h2>
-            <div className="flex flex-row min-[710px]:w-[900px] mx-auto">
-                <p className="pa-2 text-md max-[710px]:w-96 min-[710px]:w-[900px] mx-auto mb-2">
+            <div className="flex flex-col min-[1200px]:flex-row min-[800px]:w-[900px] mx-auto">
+                <p className="pa-2 text-md max-[1200px]:w-96 min-[1200px]:w-[900px] mx-auto mb-2">
                     Other more informal, personal or practice projectes I have
                     worked on.
                 </p>
@@ -195,38 +199,42 @@ function ProjectComponent(props) {
 
     return (
         <div className="flex-col">
-            <div className="m-5 transition-all project-dark rounded-md max-[748px]:w-96 max-[1100px]:h-[500px] max-[1350px]:h-[300px] min-[1350px]:h-96 mx-auto w-[800px] max-[1100px]:w-[600px] min-[1350px]:w-[900px] rounded-r-2xl md:text-text shadow-lg bg-secondary overflow-hidden md:flex">
+            <div className="flex research-card-small research-card-medium rounded-md research-card-theme">
                 <div className="relative">
                     <Image
-                        className="h-32 w-full md:h-full md:w-[500px] object-cover backdrop-blur-sm"
+                        className="research-image-small research-image-medium"
                         src={image}
                         width={500}
                         height={500}
                         alt={`Picture of ${title}`}
                     />
-                    <div className="md:hidden absolute bottom-2 right-2 z-10 flex gap-3 justify-end mt-3">
+                    <div className="min-[1200px]:hidden absolute bottom-2 right-2 z-10 flex gap-3 justify-end mt-3 flex gap-3 mt-3 items-center self-end">
+                        <BsLink45Deg className="text-2xl text-text" />
                         {Object.entries(links).map(([name, url], index) => (
                             <a
                                 key={index}
                                 href={url}
-                                className="project-links font-semibold"
+                                className="project-links-3 font-semibold"
                             >
                                 {name}
                             </a>
                         ))}
                     </div>
                 </div>
-                <div className="p-3 pl-5 pr-5 md:w-full md:h-96 md:p-7 md:py-5 md:flex md:flex-col justify-between">
+                <div className="p-3 pl-5 pr-5 md:p-7 md:py-5 md:flex md:flex-col justify-between">
                     <div className="md:flex md:flex-col md:gap-2">
                         <div className="uppercase tracking-wide text-2xl font-bold mt-1">
                             {title}
                         </div>
-                        <div className="flex gap-2 md:gap-2 opacity-40">
-                            <p className="text-[13.5px] font-semibold">
+                        <div className="flex gap-1 min-[850px]:gap-2 opacity-40">
+                            <p className="text-[14px] font-semibold max-[850px]:hidden">
                                 Key Features:
                             </p>
                             {tools.map((tool, index) => (
-                                <p key={index} className="text-[13.5px]">
+                                <p
+                                    key={index}
+                                    className="text-[11px] min-[1200px]:text-[14px]"
+                                >
                                     {tool}
                                 </p>
                             ))}
@@ -235,7 +243,7 @@ function ProjectComponent(props) {
                             {description}
                         </p>
                     </div>
-                    <div className="hidden md:flex gap-3 mt-3 items-center self-end">
+                    <div className="max-[1200px]:hidden min-[1200px]:flex gap-3 mt-3 items-center self-end">
                         <BsLink45Deg className="text-2xl" />
                         {Object.entries(links).map(([name, url], index) => (
                             <a
