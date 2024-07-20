@@ -1,7 +1,9 @@
 import React from "react";
+import Image from "next/image";
 
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { FaPenAlt, FaCodepen, FaScroll } from "react-icons/fa";
+import frontpage from "../app/images/frontpage.png";
 
 const news = [
     {
@@ -77,9 +79,15 @@ const news = [
 export default function HomeHero() {
     return (
         <section className="">
-            <div className="mt-28 max-[840px]:mt-2 w-full flex flex-col mx-auto text-center">
-                <div className="home-design-dark home-design-light"></div>
-                <div className="mt-14 max-[840px]:mt-1">
+            <div className="mt-32 max-[840px]:mt-2 w-full flex flex-col mx-auto text-center">
+                <div className="home-design-dark home-design-light flex flex-col justify-end">
+                    {/* <Image
+                        src={frontpage}
+                        alt="Frontpage"
+                        className="mx-auto h-[450px] w-full object-cover object-center to-transparent"
+                    /> */}
+                </div>
+                <div className="max-[840px]:mt-1">
                     <h1 className="home-header text-text text-5xl font-extrabold max-[640px]:text-center max-[640px]:mx-auto">
                         Loic Lorente Lemoine
                     </h1>
@@ -117,6 +125,9 @@ export default function HomeHero() {
                         <p className="">{newsItem.text}</p>
                     </div>
                 ))}
+                <p className="text-center text-sm mt-10 opacity-40">
+                    Last Updated: 20/07/2024
+                </p>
             </div>
         </section>
     );

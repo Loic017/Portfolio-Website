@@ -8,37 +8,48 @@ import { BsEnvelopePaperFill } from "react-icons/bs";
 
 import underconstruction from "../app/images/under-construction-warning-sign-vector.jpg";
 import backdrop1 from "../app/images/backdrop1.jpg";
+import frontpage from "../app/images/frontpage.png";
 
 export default function AboutInfo() {
     return (
         <section className="">
             <div className="w-full h-32">
                 <Image
-                    className="h-full about-width md:h-full object-cover object-top backdrop-blur-sm"
+                    className="h-full about-width md:h-full object-cover object-top backdrop-blur-sm rounded-b-md"
                     src={backdrop1}
                 />
             </div>
-            <div className="md:w-full w-390px info-back overflow-hidden md:text-left text-center mx-auto text-text rounded-sm flex flex-col md:gap-2">
+            <div className="md:w-full info-back overflow-hidden md:text-left text-center mx-auto text-text rounded-sm flex flex-col md:gap-2">
                 <div className="text-left mb-3">
-                    <h1 className="text-3xl font-bold mb-4 mt-10 text-center">
-                        Hello there! Im Loic,
-                    </h1>
-                    <p className="mb-2 about-width">
-                        I am a graduating Computer Science student at Cardiff
-                        University.
-                    </p>
-                    <p className="mb-2 about-width">
-                        While I have experience with different systems, from web
-                        applications to software development, I have an interest
-                        in researching and developing machine learning systems
-                        and applications.
-                    </p>
-                    <p className="mb-2 about-width">
-                        I hope that my work can be used to help others and
-                        eventually make a positive impact on the world.
-                    </p>
-                    <p className="about-width">. . .</p>
-
+                    <div className="min-[1000px]:flex-row flex-col about-width mt-10">
+                        <Image
+                            className="mx-auto w-80 h-full rounded-l-md"
+                            src={frontpage}
+                        />
+                        <div className="w-auto pl-5 mt-5">
+                            <h1 className="text-3xl font-bold mb-4 text-left">
+                                Hello there! Im Loic,
+                            </h1>
+                            <p className="mb-2">
+                                I am a graduating Computer Science student at
+                                Cardiff University.
+                            </p>
+                            <p className="mb-2">
+                                While I have experience with different systems,
+                                from web applications to software development, I
+                                have an interest in researching and developing
+                                machine learning systems and applications.
+                            </p>
+                            <p className="mb-2">
+                                I hope that my work can be used to help others
+                                and eventually make a positive impact on the
+                                world.
+                            </p>
+                            <p className="">
+                                <b>. . .</b>
+                            </p>
+                        </div>
+                    </div>
                     <h2 className="text-xl font-bold about-width text-center mb-1">
                         Links
                     </h2>

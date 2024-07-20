@@ -135,7 +135,7 @@ export default function Projects() {
         <section className="grid gap-2 mb-5">
             <div className="w-full h-32 mb-5">
                 <Image
-                    className="h-full about-width md:h-full object-cover object-top backdrop-blur-sm"
+                    className="h-full about-width md:h-full object-cover object-top backdrop-blur-sm rounded-b-md"
                     src={backdrop1}
                 />
             </div>
@@ -208,7 +208,7 @@ function ProjectComponent(props) {
                         height={500}
                         alt={`Picture of ${title}`}
                     />
-                    <div className="min-[1200px]:hidden absolute bottom-2 right-2 z-10 flex gap-3 justify-end mt-3 flex gap-3 mt-3 items-center self-end">
+                    <div className="min-[1200px]:hidden absolute bottom-2 right-2 z-10 justify-end mt-3 flex gap-3 items-center self-end">
                         <BsLink45Deg className="text-2xl text-text" />
                         {Object.entries(links).map(([name, url], index) => (
                             <a

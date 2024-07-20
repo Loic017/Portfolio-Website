@@ -48,7 +48,7 @@ export default function Experiences() {
         <section className="grid gap-2">
             <div className="w-full h-32 mb-5">
                 <Image
-                    className="h-full about-width md:h-full object-cover object-top backdrop-blur-sm"
+                    className="h-full about-width md:h-full object-cover object-top backdrop-blur-sm rounded-b-md"
                     src={backdrop1}
                 />
             </div>
