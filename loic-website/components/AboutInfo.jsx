@@ -1,6 +1,7 @@
 import React from "react";
 
 import Image from "next/image";
+import Experience from "../components/Experience";
 
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { FaPenAlt, FaCodepen, FaScroll } from "react-icons/fa";
@@ -178,6 +179,7 @@ export default function AboutInfo() {
                         </div>
                     </div>
                 </div>
+                {/* <Experience className="" /> */}
             </div>
         </section>
     );

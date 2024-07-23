@@ -141,7 +141,7 @@
 }
 
 [data-theme="dark"] .project-dark {
-    @apply bg-secondary/0 text-white;
+    @apply bg-secondary/10 text-white;
 }
 
 [data-theme="dark"] .desc-dark {
@@ -172,7 +172,7 @@
 }
 
 .research-card-theme {
-    @apply bg-accent/20;
+    @apply bg-secondary;
 }
 
 [data-theme="dark"] .research-card-theme {
@@ -180,11 +180,11 @@
 }
 
 .project-links-2 {
-    @apply shadow-sm rounded-lg px-8 py-2 text-sm transition-all bg-secondary/60 hover:bg-secondary/100 text-text/100 hover:text-text/100;
+    @apply shadow-sm rounded-lg px-8 py-2 text-sm transition-all text-text  hover:bg-text hover:text-secondary md:bg-text md:text-secondary md:hover:bg-secondary md:hover:text-text;
 }
 
 [data-theme="dark"] .project-links-2 {
-    @apply bg-secondary/40 shadow-sm hover:bg-secondary/50 hover:text-text;
+    @apply bg-secondary text-text hover:bg-text hover:text-secondary;
 }
 
 .project-links-3 {

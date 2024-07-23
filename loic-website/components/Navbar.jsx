@@ -97,7 +97,7 @@ export default function Navbar() {
                 >
                     <BsBriefcase />
                     <span className="sidebar-tooltip group-hover:scale-100">
-                        Experience
+                        Timeline
                     </span>
                 </Link>
                 {/* <Link href="/socials" className="menu-links group">

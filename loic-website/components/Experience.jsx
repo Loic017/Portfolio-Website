@@ -45,7 +45,7 @@ const projects = [
 
 export default function Experiences() {
     return (
-        <section className="grid gap-2">
+        <section className="grid gap-2 mx-auto">
             <div className="w-full h-32 mb-5">
                 <Image
                     className="h-full about-width md:h-full object-cover object-top backdrop-blur-sm rounded-b-md"
@@ -57,7 +57,7 @@ export default function Experiences() {
                 A timeline of my education and work experience.
             </p>
             <div className="grid gap-4 mt-7 mb-6">
-                <div className="grid min-[1100px]:grid-cols-1 md:gap-0 mx-auto">
+                <div className="grid min-[1100px]:grid-cols-1 md:gap-0 mx-auto text-left">
                     {projects.map((project, index) => (
                         <ExperienceComponent key={index} {...project} />
                     ))}
@@ -80,11 +80,11 @@ function ExperienceComponent(props) {
                     </div>
                 </div>
             ) : null}
-            <div className="ml-2 mr-2 transition-all md:h-52 project-dark h-auto mx-auto w-72 md:w-[900px] rounded-md shadow-lg overflow-hidden">
-                <div className="flex md:flex-row flex-col mx-auto">
+            <div className="ml-2 mr-2 transition-all min-[1100px]:h-52 project-dark h-auto mx-auto w-72 min-[1100px]:w-[900px] rounded-lg shadow-lg overflow-hidden">
+                <div className="flex min-[1100px]:flex-row flex-col mx-auto">
                     <div className="relative ">
                         <Image
-                            className="w-full h-auto md:h-52 md:w-72 object-cover backdrop-blur-sm"
+                            className="w-full h-auto min-[1100px]:h-52 min-[1100px]:w-72 object-cover backdrop-blur-sm"
                             src={image}
                             width={500}
                             height={500}
@@ -102,9 +102,9 @@ function ExperienceComponent(props) {
                             ))}
                         </div> */}
                     </div>
-                    <div className="pb-10 pt-3 pl-5 pr-3 md:w-full project-content-dark">
-                        <div className="grid grid-cols-1 gap-x-3 md:flex md:flex-col md:justify-between md:h-full">
-                            <div className="md:flex md:flex-col md:gap-2">
+                    <div className="pb-10 pt-3 pl-5 pr-3 md:w-full">
+                        <div className="grid grid-cols-1 gap-x-3 min-[1100px]:flex min-[1100px]:flex-col min-[1100px]:justify-between min-[1100px]:h-full">
+                            <div className="">
                                 <div className="flex flex-row justify-between items-center my-auto text-sm font-semibold opacity-80">
                                     {tools.map((tool, index) => (
                                         <p key={index} className="">
@@ -117,8 +117,11 @@ function ExperienceComponent(props) {
                                 </div>
 
                                 <div className=" tracking-wide text-md font-bold">
-                                    {title} - {role}
+                                    {title}
                                 </div>
+                                <p className="desc-dark font-bold">
+                                    Grade: {role}
+                                </p>
                                 <p className="desc-dark">{info}</p>
                             </div>
                         </div>
